@@ -1224,7 +1224,7 @@
                                         <label for="donateOnBehalf" class="textleft mb-2">Donate on behalf of</label>
                                         <input type="text" class="form-control" id="donateOnBehalf"
                                             name="donateOnBehalf"
-                                            placeholder="Enter the name if donating on behalf of someone else">
+                                            placeholder="Enter the ame if donating on behalf of someone else">
                                     </div>
 <div class="form-group mb-3">
     <label>Payment Method</label>
