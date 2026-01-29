@@ -1397,7 +1397,7 @@
     .mont_regular_five_twenty {
       font-family: 'Mntserrat_regularo' !important;
       font-weight: 500 !important;
-      font-size: 20px!important;
+      font-size: 20px !important;
     }
 
     .karla_regular_three {
@@ -1570,8 +1570,7 @@
       <div class="col-md-4 mb-4">
         <div class="d-flex justify-content-center gap-2">
           <strong class="mont_bold_six_sixteen">Client:</strong>
-          <span class="mont_regular_three_sixteen">Commchat
-            Messenger</span>
+          <span class="mont_regular_three_sixteen">GIM-Digital Truck</span>
         </div>
       </div>
 
@@ -1579,8 +1578,7 @@
       <div class="col-md-4 mb-4">
         <div class="d-flex justify-content-center gap-2">
           <strong class="mont_bold_six_sixteen">Deliverables:</strong>
-          <span class="mont_regular_three_sixteen">Mobile App, Web App
-            Desktop App</span>
+          <span class="mont_regular_three_sixteen">Mobile Application</span>
         </div>
       </div>
 
@@ -1588,9 +1586,7 @@
       <div class="col-md-4 mb-4">
         <div class="d-flex justify-content-center gap-2">
           <strong class="mont_bold_six_sixteen">Sector:</strong>
-          <span class="mont_regular_three_sixteen">Android, iOS
-            MacOS, Windows
-            Linux</span>
+          <span class="mont_regular_three_sixteen">Logistics</span>
         </div>
       </div>
     </div>
@@ -1601,12 +1597,20 @@
     margin: 0 auto;">
     <div class="columns">
       <div class="column text-left">
-        <h3 class="mont_bold_six_twenty_four">The Problem</h3>
-        <p class="karla_regular_three_sixteen">Millions of people are concerned about the risk of their personal information getting leaked or privacy being violated. The assurance of secure protection offered by many platforms has proven to be inadequate. CommChat offered a solution to this problem, allowing people to communicate with complete privacy and security on a trustworthy platform online.</p>
+        <h3 class="mont_bold_six_twenty_four">Challenge</h3>
+        <p class="karla_regular_three_sixteen">The demand and supply for truck-based logistics in Bangladesh do not
+          match up. Businesses often have to spend time looking for trucks that meet their needs, while truck drivers
+          wait for customers. The ongoing pandemic has made this problem more pronounced, due to limited mobility and
+          slow business operations. Additionally, businesses now face additional challenges when it comes to managing
+          their inventory.</p>
       </div>
       <div class="column text-left">
-        <h3 class="mont_bold_six_twenty_four">Overview</h3>
-        <p class="karla_regular_three_sixteen">The CommChat system is an interface used primarily for user-to-user communication in the real world. It’s also used to interact with the inhabitants of the digital universe. Users may quickly jump in and out between these two realities depending on their needs.- paraphrase it</p>
+        <h3 class="mont_bold_six_twenty_four">Outcome</h3>
+        <p class="karla_regular_three_sixteen">GIM is an online platform that connects truck owners, agents, and drivers
+          with customers in need of various types of trucks. Its goal is to provide truck rental services to businesses
+          and individuals and to empower people by helping them organize transportation and earn more money. It aims to
+          bridge the gap between SMEs, large enterprises and individuals with transporters and use technology to solve
+          transportation challenges and optimize the process.</p>
       </div>
     </div>
   </section>
@@ -1616,15 +1620,43 @@
     <div class="columns">
       <div class="column text-left">
         <div class="header">
-          <h3 class="mont_bold_six_twenty_four">User</h3>
+          <h3 class="mont_bold_six_twenty_four">Problem</h3>
         </div>
         <div class="subheader">
-          <p class="mont_regular_three_sixteen" style="font-size: 20px;">Research</p>
+          <p class="mont_regular_three_sixteen" style="font-size: 20px;">Statement</p>
         </div>
       </div>
       <div class="column text-left">
-        <p class="karla_regular_three_sixteen">Interviews were conducted with metaverse users to gain deeper insights into their communication needs and preferences within the virtual world. The interviews were conducted one-on-one and lasted approximately 30-45 minutes each. The following topics were covered in the interviews:
-</p>
+        <div class="">
+          <div class="card-body">
+            <ul class="list-unstyled pain-point-list">
+              <li class="d-flex align-items-start mb-3">
+                <span class="icon">👉</span>
+                <span>Can't find reliable truck services.</span>
+              </li>
+
+              <li class="d-flex align-items-start mb-3">
+                <span class="icon">👉</span>
+                <span>Unable to reduce waste in the supply chain.</span>
+              </li>
+
+              <li class="d-flex align-items-start mb-3">
+                <span class="icon">👉</span>
+                <span>Unable to get shipments delivered on time.</span>
+              </li>
+
+              <li class="d-flex align-items-start">
+                <span class="icon">👉</span>
+                <span>
+                  Finding and renting industrial trucks (petroleum tankers,
+                  concrete mixers, etc.) is difficult and expensive.
+                </span>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -1636,71 +1668,42 @@
     margin-bottom: 100px;">
     <div class="center">
       <div class="image-block">
-        <img src="{{ asset('ecommfirstBig.png') }}" alt="Survey Results" class="img-fluid" />
+        <img src="{{ asset('gimBigImageOne.png') }}" alt="Survey Results" class="img-fluid" />
       </div>
     </div>
   </section>
 
   <!-- User Personas -->
-  <h4 class="text-center mont_bold_seven_sixteen">2. User Testing</h4>
+  <h4 class="text-center mont_bold_seven_sixteen">2. User Persona</h4>
   <section class="personas" style="width: 50%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;">
     <div class="center">
       <div class="image-block">
-        <img src="{{ asset('user_testing.png') }}" alt="User Persona" class="img-fluid" />
+        <img src="{{ asset('gimBigImageTwo.png') }}" alt="User Persona" class="img-fluid" />
+      </div>
+    </div>
+  </section>
+
+    <h4 class="text-center mont_bold_seven_sixteen">3. User Journey Map</h4>
+  <section class="personas" style="width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;">
+    <div class="center">
+      <div class="image-block">
+        <img src="{{ asset('gimBigImageThree.png') }}" alt="User Persona" class="img-fluid" />
       </div>
     </div>
   </section>
 
   <!-- Design Solution -->
   <h4 class="text-center mont_bold_seven_eightteen">🧩 Design Solution</h4>
-<p class="text-center karla_regular_four_sixteen"
-   style="width:50%; margin:0 auto; text-align:left!important; display:flex; align-items:center;">
-  
-  <span style="color:#5A2CEA; font-weight:700; font-size:33px; margin-right:8px;">
-    *
-  </span>
-
-  <span class="mont_regular_five_twenty" style="margin-bottom: 13px;">
-    Mobile App
-  </span>
-
-</p>
-  <section class="design-solution" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 100px;">
-    <p class="text-center karla_regular_four_sixteen" style="width: 55%;
-    margin: 0 auto;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M5.40875 8.5905V14H8.59056V8.59049H14V5.40868L8.59056 5.40868V0H5.40875V5.40868L0 5.40868V8.5905H5.40875Z"
-          fill="#333034" />
-      </svg> EdLeader 21 app offers light and dark modes. Dark mode is easier on the eyes in low light and reduces
-      battery usage.</p>
-
-    <div class="center">
-      <div class="image-block">
-        <img src="{{ asset('edleader_image_6.png') }}" alt="Final Design Mockup" class="img-fluid" />
-      </div>
-    </div>
-  </section>
-
-
-
   <p class="text-center karla_regular_four_sixteen"
-   style="width:50%; margin:0 auto; text-align:left!important; display:flex; align-items:center;">
-  
-  <span style="color:#5A2CEA; font-weight:700; font-size:33px; margin-right:8px;">
-    *
-  </span>
+    style="width:50%; margin:0 auto; text-align:left!important; display:flex; align-items:center;">
 
-  <span class="mont_regular_five_twenty" style="margin-bottom: 13px;">
-    Web App
-  </span>
-
-</p>
+  </p>
   <section class="design-solution" style="width: 50%;
     margin: 0 auto;
     margin-top: 20px;
@@ -1710,15 +1713,16 @@
         <path fill-rule="evenodd" clip-rule="evenodd"
           d="M5.40875 8.5905V14H8.59056V8.59049H14V5.40868L8.59056 5.40868V0H5.40875V5.40868L0 5.40868V8.5905H5.40875Z"
           fill="#333034" />
-      </svg> EdLeader 21 app offers light and dark modes. Dark mode is easier on the eyes in low light and reduces
-      battery usage.</p>
+      </svg> Submit bids and get notified when they 
+are accepted</p>
 
     <div class="center">
       <div class="image-block">
-        <img src="{{ asset('ecommThirdBig.png') }}" alt="Final Design Mockup" class="img-fluid" />
+        <img src="{{ asset('gim_design_solution.png') }}" alt="Final Design Mockup" class="img-fluid" />
       </div>
     </div>
   </section>
+
 
   <div style="width: 50%;
     margin: 0 auto;text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="202" height="29"
@@ -1735,26 +1739,6 @@
         stroke-linecap="round" />
     </svg></div>
 
-  <!-- Key Takeaways -->
-  <section class="info center" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    background: none;">
-    <h4 class="mont_bold_seven_sixteen" style="margin-bottom: 14%;">Evaluation</h4>
-    <p class="karla_regular_three_eighteen" style="text-align: left;">The messaging app was tested with a group of users, who reported that it was easy to use and met their needs for fast and accessible communication. The app's simple and intuitive design was well-received, and users appreciated the ability to send multimedia messages and initiate voice and video calls from within the app.
-</p>
-  </section>
-
-    <section class="info center" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 0px;
-    margin-bottom: 100px;
-    background: none;">
-    <h4 class="mont_bold_seven_sixteen" style="margin-bottom: 14%;">Conclusion</h4>
-    <p class="karla_regular_three_eighteen" style="text-align: left;">The Commchat messaging app provides a seamless communication experience for users in the virtual world. Its minimalist design and support for text and multimedia messages make it easy for users to connect and communicate with others in real life and also in the metaverse. With features such as group messaging and voice and video calls, the app meets the needs of users and provides a platform for secure and private conversations.</p>
-    <a href="#" class="btn-download mont_bold_seven_sixteen">Download PDF</a>
-  </section>
 
   <!-- Footer -->
   <section class="contact-section py-5">
