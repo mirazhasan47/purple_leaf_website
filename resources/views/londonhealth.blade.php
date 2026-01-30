@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EdLeader21 Case Study</title>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <!-- Bootstrap CSS -->
@@ -13,76 +14,95 @@
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Segoe UI', sans-serif;
       line-height: 1.6;
       background-color: #ffffff;
       color: #333;
     }
+
     header {
-      background-color: #ffffff;
-        background-size: cover;
-        text-align: center;
-        padding: 60px 20px;
+      background: #eef6fb;
+      text-align: center;
+      padding: 60px 0px;
     }
+
     header h1 {
       color: #004f94;
       font-size: 1.2rem;
       margin-top: 10px;
     }
+
     header .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
       max-width: 1200px;
       margin: 0 auto;
+      width: 70%;
+      margin-top: 50px;
     }
+
     header .left-column {
       display: flex;
       flex-direction: column;
       align-items: center;
       max-width: 50%;
     }
+
     header .left-column .top-image {
       max-width: 100%;
       margin-bottom: 20px;
     }
+
     header .left-column .text {
       text-align: center;
     }
+
     header .right-column {
       max-width: 50%;
     }
+
     header .right-column img {
       max-width: 100%;
     }
+
     section {
       padding: 60px 20px;
     }
+
     .center {
       text-align: center;
     }
+
     .info {
       background: #f9f9f9;
       padding: 40px 20px;
       text-align: center;
     }
+
     .columns {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-    margin-top: 90px;
-    margin-bottom: 90px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+      margin-top: 90px;
+      margin-bottom: 90px;
     }
+
     .column {
       flex: 1 1 300px;
       max-width: 500px;
     }
-    h2, h3, h4 {
+
+    h2,
+    h3,
+    h4 {
       color: #222;
       margin-bottom: 16px;
     }
+
     ul {
       list-style: none;
       padding-left: 0;
@@ -92,54 +112,65 @@
       text-align: center;
       margin-top: 30px;
     }
+
     .image-block img {
       max-width: 90%;
       margin: 10px auto;
       display: block;
     }
+
     .personas {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 40px;
     }
+
     .persona-card {
       text-align: center;
       max-width: 200px;
     }
+
     .persona-card img {
       width: 120px;
       height: 120px;
       border-radius: 50%;
     }
+
     .footer {
       background: #f1f1f1;
       padding: 40px 20px;
       text-align: center;
       color: #666;
     }
+
     .footer h3 {
       color: #8e44ec;
       font-size: 1.8rem;
       margin-bottom: 10px;
     }
+
     .footer a {
       color: #333;
       text-decoration: none;
     }
+
     .footer .links {
       display: flex;
       justify-content: center;
       gap: 60px;
       margin-top: 20px;
     }
+
     .footer ul {
       list-style: none;
       padding: 0;
     }
+
     .footer li {
       margin-bottom: 8px;
     }
+
     .btn-download {
       background-color: #5f3dc4;
       color: white;
@@ -151,79 +182,93 @@
       margin-top: 14%;
       width: 100%;
     }
+
     /* Added background color for Interview Results and next sections */
-    .interview-results, .personas, .journey-map, .design-solution {
+    .interview-results,
+    .personas,
+    .journey-map,
+    .design-solution {
       background-color: #eef6fb;
       padding: 40px 20px;
     }
 
     header .left-column {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Align content to the left */
-  text-align: left;        /* Ensure text aligns left */
-}
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      /* Align content to the left */
+      text-align: left;
+      /* Ensure text aligns left */
+    }
 
-header .left-column .top-image {
-  margin-bottom: 20px;
-  display: block;
-}
+    header .left-column .top-image {
+      margin-bottom: 20px;
+      display: block;
+    }
 
-section.center {
-  margin: 0 10%; /* 10% horizontal margin on left and right */
-}
+    section.center {
+      margin: 0 10%;
+      /* 10% horizontal margin on left and right */
+    }
 
-.contact-section {
-    background-color: #ffffff;
-    color: #1a1a1a;
-    padding: 100px 0;
-}
+    .contact-section {
+      background-color: #ffffff;
+      color: #1a1a1a;
+      padding: 100px 0;
+    }
 
-.gradient-text {
-    background: linear-gradient(90deg, #d27eff, #7c3aed);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+    .gradient-text {
+      background: linear-gradient(90deg, #d27eff, #7c3aed);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-.email-link {
-    font-size: 1.1rem;
-    color: #000;
-    text-decoration: underline;
-}
+    .email-link {
+      font-size: 1.1rem;
+      color: #000;
+      text-decoration: underline;
+    }
 
-.contact-section a {
-    color: #333;
-    text-decoration: underline;
-}
+    .contact-section a {
+      color: #333;
+      text-decoration: underline;
+    }
 
-.contact-section a:hover {
-    color: #7c3aed;
-}
+    .contact-section a:hover {
+      color: #7c3aed;
+    }
 
-.text-left {
-  text-align:left;
-}
+    .text-left {
+      text-align: left;
+    }
+
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
         align-items: center;
       }
-      header .left-column, header .right-column {
+
+      header .left-column,
+      header .right-column {
         max-width: 100%;
       }
+
       .user-research-container {
         flex-direction: column;
         align-items: center;
       }
+
       .left-column,
       .right-column {
         width: 100%;
         text-align: center;
       }
+
       .left-column .header,
       .left-column .subheader {
         margin-bottom: 20px;
       }
+
       .right-column p {
         font-size: 1rem;
       }
@@ -255,7 +300,10 @@ section.center {
 
 
 
-        /* Load Poppins font */
+
+
+
+    /* Load Poppins font */
     @font-face {
       font-family: 'Poppins';
       src: url('{{ asset("Poppins-ExtraLight.ttf") }}') format('truetype');
@@ -264,7 +312,7 @@ section.center {
     }
 
     @font-face {
-      font-family: 'Montserrat_regular';
+      font-family: 'Mntserrat_regularo';
       src: url('{{ asset("Montserrat-Regular.ttf") }}') format('truetype');
       font-weight: 500;
       font-style: normal;
@@ -349,10 +397,11 @@ section.center {
     .navbar {
       background-color: transparent !important;
       transition: background-color 0.4s ease;
+      background-color: #000000 !important;
     }
 
     .navbar.scrolled {
-      background-color: black !important;
+      background-color: #000000 !important;
       /* Purple background */
     }
 
@@ -375,6 +424,8 @@ section.center {
 
     /* Hero Section */
     .hero {
+      min-height: 100vh;
+      background: url('{{ asset("HeroNewOne.jpg") }}') no-repeat center center;
       background-size: cover;
       display: flex;
       justify-content: center;
@@ -424,7 +475,7 @@ section.center {
     /* Headings */
     .container {
       text-align: center;
-      max-width: 88%;
+      max-width: 88% !important;
     }
 
     .container h1 {
@@ -433,7 +484,7 @@ section.center {
       font-style: unset;
       font-size: 72px;
       margin: 0;
-      background: linear-gradient(141deg, #ef95ff, #efe5ed, #ffffff);
+      background: linear-gradient(141deg, #1F455D, #1F455D, #1F455D);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       padding-bottom: 5px !important;
@@ -1298,26 +1349,103 @@ section.center {
 
 
     .cookie-consent {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    max-width: 600px;
-    margin: auto;
-    background: #ffffff;
-    padding: 15px 20px;
-    border-radius: 12px;
-    display: none;
-    z-index: 9999;
-    font-size: 14px;
-}
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      max-width: 600px;
+      margin: auto;
+      background: #ffffff;
+      padding: 15px 20px;
+      border-radius: 12px;
+      display: none;
+      z-index: 9999;
+      font-size: 14px;
+    }
+
+    .mont {
+      font-family: 'Mntserrat_regularo' !important;
+    }
+
+    .mont_bold_seven {
+      font-family: 'Montserrat_bold' !important;
+      font-weight: 700 !important;
+    }
+
+    .mont_bold_seven_sixteen {
+      font-family: 'Montserrat_bold' !important;
+      font-weight: 700 !important;
+      font-size: 16px !important;
+    }
+
+    .mont_bold_six {
+      font-family: 'Montserrat_bold' !important;
+      font-weight: 600 !important;
+    }
+
+    .mont_bold_six_twenty_four {
+      font-family: 'Montserrat_bold' !important;
+      font-weight: 600 !important;
+      font-size: 24px !important;
+    }
+
+    .mont_regular_three {
+      font-family: 'Montserrat_bold' !important;
+      font-weight: 600 !important;
+    }
+
+    .karla_regular_three {
+      font-family: 'KarlaRegular';
+      font-weight: 300 !important;
+    }
+
+    .karla_regular_three_eighteen {
+      font-family: 'KarlaRegular';
+      font-weight: 300 !important;
+      font-size: 18px !important;
+    }
+
+    .karla_regular_four_sixteen {
+      font-family: 'KarlaRegular';
+      font-weight: 300 !important;
+      font-size: 16px;
+    }
+
+    .mont_bold_six_sixteen {
+      font-family: 'Montserrat_bold' !important;
+      font-weight: 600 !important;
+      font-size: 16px !important;
+    }
+
+    .mont_regular_three_sixteen {
+      font-family: 'Mntserrat_regularo' !important;
+      font-weight: 300 !important;
+      font-size: 16px !important;
+    }
+
+    .mont_bold_seven_eightteen {
+      font-family: 'Montserrat_bold' !important;
+      font-weight: 700 !important;
+      font-size: 18px !important;
+    }
+
+    .mont_bold_seven_sixteen {
+      font-family: 'Montserrat_bold' !important;
+      font-weight: 700 !important;
+      font-size: 18px !important;
+    }
+
+    .karla_regular_three_sixteen {
+      font-family: 'KarlaRegular';
+      font-weight: 300 !important;
+      font-size: 16px !important;
+    }
   </style>
 </head>
+
 <body>
 
-
-
-  <header class="custom-header hero">
+  <header class="custom-header">
     <a class="navbar-brand" href="#">
       <img src="http://localhost/purple_leaf/public/LogoOne.png" alt="Logo">
     </a>
@@ -1397,141 +1525,156 @@ section.center {
   </nav>
 
   <!-- Header -->
-<header>
-  <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-    <!-- Left Column: Image + Text -->
-    <div class="left-column">
-      <img src="{{ asset('londonLogo.png') }}" alt="Small Mobile Mockup" class="top-image" />
+  <header>
+    <div class="container heroo" style="display: flex; justify-content: space-between; align-items: center;">
+      <!-- Left Column: Image + Text -->
+      <div class="left-column">
+        <img src="{{ asset('edleader_image_1.png') }}" alt="Small Mobile Mockup" class="top-image" />
         <div class="text">
-        <h1 style="text-align: left;
-    width: 72%;">Empowering Education Leaders: A Deep Dive into EdLeader 21's Mobile App UX</h1>
+          <h1 class="mont" style="text-align: left;
+    width: 72%;
+    font-size: 18px;
+    color: #1F455D!important;
+    font-weight: 400;">Empowering Education Leaders: A Deep Dive into EdLeader 21's Mobile App UX</h1>
+        </div>
+      </div>
+
+      <!-- Right Column: Large Image -->
+      <div class="right-column">
+        <img src="{{ asset('edleader_image_2.png') }}" alt="Large Mobile Mockup" />
       </div>
     </div>
-
-    <!-- Right Column: Large Image -->
-    <div class="right-column">
-      <img src="{{ asset('londonBannerImage.png') }}" alt="Large Mobile Mockup" />
-    </div>
-  </div>
-</header>
+  </header>
 
   <!-- Project Info -->
-<section class="container py-5" style="width: 40%;">
-        <h3 style="    text-align: center;
+  <section class="container py-5" style="width: 65%;">
+    <h3 class="mont_bold_seven" style="    text-align: center;
     font-size: 20px;
     margin-bottom: 42px;">Project Info</h3>
-  <div class="row text-center">
-    <!-- Project 1 -->
-    <div class="col-md-4 mb-4">
-      <p>
-        <strong>Client:</strong> EdLeader 21
-      </p>
-    </div>
+    <div class="row text-center">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="d-flex justify-content-center gap-2">
+          <strong class="mont_bold_six_sixteen">Client:</strong>
+          <span class="mont_regular_three_sixteen">London Health</span>
+        </div>
+      </div>
 
-    <!-- Project 2 -->
-    <div class="col-md-4 mb-4">
-      <p>
-        <strong>Deliverables:</strong> Web App
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="d-flex justify-content-center gap-2">
+          <strong class="mont_bold_six_sixteen">Deliverables:</strong>
+          <span class="mont_regular_three_sixteen">Mobile  Application</span>
+        </div>
+      </div>
 
-      </p>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="d-flex justify-content-center gap-2">
+          <strong class="mont_bold_six_sixteen">Sector:</strong>
+          <span class="mont_regular_three_sixteen">Health</span>
+        </div>
+      </div>
     </div>
-
-    <!-- Project 3 -->
-    <div class="col-md-4 mb-4">
-      <p>
-        <strong>Sector:</strong> Education
-      </p>
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- Problem and Goals -->
-
-
-<section class="info">
-  <div class="columns">
-    <div class="column text-left">
-      <h3>The Problem</h3>
-      <p>Users were overwhelmed by the scattered content & needed a more seamless and centralized tool for networking and leadership growth among educators.</p>
+  <section class="info" style="    width: 85%;
+    margin: 0 auto;">
+    <div class="columns">
+      <div class="column text-left">
+        <h3 class="mont_bold_six_twenty_four">The Problem</h3>
+        <p class="karla_regular_three_sixteen">The We were approached by London Health to build a mobile app for their service. For most people, finding the right doctor is a difficult job. At the same time, doctors have a hard time managing their appointments.
+So, the idea was to help patients easily find the right doctor and help doctors manage their appointments.</p>
+      </div>
+      <div class="column text-left">
+        <h3 class="mont_bold_six_twenty_four">Goals</h3>
+        <p class="karla_regular_three_sixteen">To improve the overall experience of doctors and patients, our goals were to-</p>
+        <ol class="karla_regular_three_sixteen">
+          <li>Help patients find the right doctor.</li>
+          <li>Help doctors manage and organize their appointments.</li>
+          <li>Save time for both the doctors and patients.</li>
+          <li>Help doctors and patients plan in advance.</li>
+        </ol>
+      </div>
     </div>
-    <div class="column text-left">
-      <h3>Goals</h3>
-      <ol>
-        <li>Connect colleagues across the nation.</li>
-        <li>Keep educators up to date about upcoming events.</li>
-        <li>Ensure access to contacts of educators and leaders.</li>
-        <li>Build a community of school systems that can grow together.</li>
-      </ol>
-    </div>
-  </div>
-</section>
-
-  <!-- User Research Section -->
+  </section>
 
 
-<h4 class="text-center">1. QUESTIONNAIRE</h4>
-<section class="interview-results" style="width: 50%;
+  <h4 class="text-center mont_bold_seven_sixteen">1. Research Questionnaire</h4>
+  <section class="interview-results" style="width: 50%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;">
-  <div class="center">
-    <div class="image-block">
-      <img src="{{ asset('londonBigImageOne.png') }}" alt="Survey Results" class="img-fluid" />
+    <div class="center">
+      <div class="image-block">
+        <img src="{{ asset('londonBigImageOne.png') }}" alt="Survey Results" class="img-fluid" />
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- User Personas -->
-<h4 class="text-center">2. USER PERSONA</h4>
-<section class="personas" style="width: 50%;
+  <!-- User Personas -->
+  <h4 class="text-center mont_bold_seven_sixteen">2. Interview Results</h4>
+  <section class="personas" style="width: 50%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;">
-  <div class="center">
-    <div class="image-block">
-      <img src="{{ asset('londonBigImageTwo.png') }}" alt="User Persona" class="img-fluid" />
+    <div class="center">
+      <div class="image-block">
+        <img src="{{ asset('londonBigImageTwo.png') }}" alt="User Persona" class="img-fluid" />
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Journey Map -->
-<h4 class="text-center">3. USER Journey Map</h4>
-<section class="journey-map" style="width: 50%;
+  <!-- Journey Map -->
+  <h4 class="text-center mont_bold_seven_sixteen">3. User Persona</h4>
+  <section class="journey-map" style="width: 50%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;">
-  <div class="center">
-    <div class="image-block">
-      <img src="{{ asset('londonBigImageThree.png') }}" alt="User Journey Map" class="img-fluid" />
+    <div class="center">
+      <div class="image-block">
+        <img src="{{ asset('londonBigImageThree.png') }}" alt="User Journey Map" class="img-fluid" />
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Design Solution -->
-<h4 class="text-center">🧩 Design Solution</h4>
-<section class="design-solution" style="width: 50%;
+  <!-- Design Solution -->
+  <h4 class="text-center mont_bold_seven_eightteen">🧩 Design Solution</h4>
+  <section class="design-solution" style="width: 50%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;">
-    <p class="text-center" style="width: 55%;
+    <p class="text-center karla_regular_four_sixteen" style="width: 55%;
     margin: 0 auto;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M5.40875 8.5905V14H8.59056V8.59049H14V5.40868L8.59056 5.40868V0H5.40875V5.40868L0 5.40868V8.5905H5.40875Z" fill="#333034"/>
-</svg> EdLeader 21 app offers light and dark modes. Dark mode is easier on the eyes in low light and reduces battery usage.</p>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M5.40875 8.5905V14H8.59056V8.59049H14V5.40868L8.59056 5.40868V0H5.40875V5.40868L0 5.40868V8.5905H5.40875Z"
+          fill="#333034" />
+      </svg> Multiple sign-in options include- Email ID,
+Phone number & Touch-ID.
+</p>
 
-  <div class="center">
-    <div class="image-block">
-      <img src="{{ asset('londonBigImageFour.png') }}" alt="Final Design Mockup" class="img-fluid" />
+    <div class="center">
+      <div class="image-block">
+        <img src="{{ asset('londonBigImageFour.png') }}" alt="Final Design Mockup" class="img-fluid" />
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<div style="width: 50%;
-    margin: 0 auto;text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="202" height="29" viewBox="0 0 202 29" fill="none">
-<path d="M72.9727 15.9023C73.8011 15.9023 74.4727 15.2308 74.4727 14.4023C74.4727 13.5739 73.8011 12.9023 72.9727 12.9023V15.9023ZM72.9727 12.9023H3.88453V15.9023H72.9727V12.9023Z" fill="#B5B5B5"/>
-<path d="M15.3984 26.8008L2.998 14.4003L15.3984 1.99991" stroke="#B5B5B5" stroke-width="3" stroke-linecap="round"/>
-<path d="M129.66 12.9023C128.832 12.9023 128.16 13.5739 128.16 14.4023C128.16 15.2308 128.832 15.9023 129.66 15.9023L129.66 12.9023ZM129.66 15.9023L198.748 15.9023L198.748 12.9023L129.66 12.9023L129.66 15.9023Z" fill="#383838"/>
-<path d="M187.234 2.00391L199.635 14.4043L187.234 26.8048" stroke="#383838" stroke-width="3" stroke-linecap="round"/>
-</svg></div>
+  <div style="width: 50%;
+    margin: 0 auto;text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="202" height="29"
+      viewBox="0 0 202 29" fill="none">
+      <path
+        d="M72.9727 15.9023C73.8011 15.9023 74.4727 15.2308 74.4727 14.4023C74.4727 13.5739 73.8011 12.9023 72.9727 12.9023V15.9023ZM72.9727 12.9023H3.88453V15.9023H72.9727V12.9023Z"
+        fill="#B5B5B5" />
+      <path d="M15.3984 26.8008L2.998 14.4003L15.3984 1.99991" stroke="#B5B5B5" stroke-width="3"
+        stroke-linecap="round" />
+      <path
+        d="M129.66 12.9023C128.832 12.9023 128.16 13.5739 128.16 14.4023C128.16 15.2308 128.832 15.9023 129.66 15.9023L129.66 12.9023ZM129.66 15.9023L198.748 15.9023L198.748 12.9023L129.66 12.9023L129.66 15.9023Z"
+        fill="#383838" />
+      <path d="M187.234 2.00391L199.635 14.4043L187.234 26.8048" stroke="#383838" stroke-width="3"
+        stroke-linecap="round" />
+    </svg></div>
 
   <!-- Key Takeaways -->
   <section class="info center" style="width: 50%;
@@ -1539,56 +1682,68 @@ section.center {
     margin-top: 100px;
     margin-bottom: 100px;
     background: none;">
-    <h4 style="margin-bottom: 14%;">Key Takeaways</h4>
-    <p>This project focused on user research to identify the needs of educators. We crafted scalable solutions to ensure a better, more impactful digital experience.</p>
-    <a href="#" class="btn-download">Download PDF</a>
+    <h4 class="mont_bold_seven_sixteen" style="margin-bottom: 14%;">Key Takeaways</h4>
+    <p class="karla_regular_three_eighteen">This project focused on user research to identify the needs of educators. We
+      crafted scalable solutions to ensure
+      a better, more impactful digital experience.</p>
+    <a href="#" class="btn-download mont_bold_seven_sixteen">Download PDF</a>
   </section>
 
   <!-- Footer -->
-    <section class="contact-section py-5">
-        <div class="container" style="margin-top: 70px; margin-bottom: 70px; width: 968px;">
-            <div class="row align-items-start">
-                <!-- Left: Contact Info -->
-                <div class="col-lg-6 mb-4">
-                    <h2 class="fw-bold gradient-text mb-3" style="text-align: left;">Get<br>in touch</h2>
-                    <p style="text-align: left;">
-                        <a href="mailto:contactpurpleleaf@gmail.com" class="email-link" style="text-align: left;">
-                            contactpurpleleaf@gmail.com
-                        </a>
-                    </p>
-                    <p style="text-align: left;">
-                        <img src="https://img.icons8.com/color/24/000000/whatsapp--v1.png" alt="WhatsApp icon" />
-                        +880123456789
-                    </p>
-                </div>
-
-                <!-- Right: Links -->
-                <div class="col-lg-6 d-flex gap-5" style="margin-top: 55px;">
-                    <div>
-                        <h5 class="fw-bold">Portfolio</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Dribbble</a></li>
-                            <li><a href="#">Behance</a></li>
-                            <li><a href="#">GitHub</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h5 class="fw-bold">Social media</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Linkedin</a></li>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Instagram</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <section class="contact-section py-5">
+    <div class="container widthControl" style="    margin-top: 120px;
+    margin-bottom: 120px;
+    width: 62%;
+    /* margin: auto; */">
+      <div class="row align-items-start">
+        <!-- Left: Contact Info -->
+        <div class="col-lg-8 mb-4">
+          <h2 class="fw-bold gradient-text mb-3" style="text-align: left;">Get<br>in touch</h2>
+          <p style="text-align: left;"><a href="mailto:contactpurpleleaf@gmail.com" class="email-link"
+              style="text-align: left;">contactpurpleleaf@gmail.com</a></p>
+          <p style="text-align: left;">
+            <img src="https://img.icons8.com/color/24/000000/whatsapp--v1.png" alt="WhatsApp icon" />
+            +880123456789
+          </p>
         </div>
-    </section>
+
+        <!-- Right: Links -->
+        <div class="col-lg-4" style="margin-top: 119px;">
+          <div class="row gx-0">
+
+            <div class="col-6">
+              <h5 class="fw-bold text-nowrap" style="text-align: left;font-size: clamp(21px, 2vw, 1.25rem);">Portfolio
+              </h5>
+              <ul class="list-unstyled mb-0">
+                <li><a href="#" class="small text-decoration-none">Dribbble</a></li>
+                <li><a href="#" class="small text-decoration-none">Behance</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6 d-flex justify-content-end">
+              <div style="min-width: fit-content;">
+                <h5 class="fw-bold text-nowrap" style="font-size: clamp(21px, 2vw, 1.25rem);">Social media</h5>
+                <ul class="list-unstyled mb-0">
+                  <li><a href="#" class="small text-decoration-none">Linkedin</a></li>
+                  <li><a href="#" class="small text-decoration-none">Facebook</a></li>
+                  <li><a href="#" class="small text-decoration-none">Instagram</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
+
 
 
 <script>
@@ -1628,6 +1783,9 @@ section.center {
     updateHeaderBackground();
   }
 </script>
+
+
+
 
 
 
@@ -1674,7 +1832,7 @@ section.center {
 
   document.addEventListener("DOMContentLoaded", function () {
     var navbar = document.querySelector('.navbar');
-    var heroHeight = document.querySelector('.hero').offsetHeight;
+    var heroHeight = document.querySelector('.heroo').offsetHeight;
 
     window.addEventListener('scroll', function () {
       if (window.scrollY > heroHeight - 50) {
@@ -1699,13 +1857,10 @@ section.center {
     });
   });
 
-
-
-
 </script>
 
 <script>
-$(document).on('click', '.nav-link[data-target]', function (e) {
+  $(document).on('click', '.nav-link[data-target]', function (e) {
     e.preventDefault();
 
     const target = $(this).data('target');
@@ -1715,5 +1870,5 @@ $(document).on('click', '.nav-link[data-target]', function (e) {
 
     // redirect to page
     window.location.href = 'purple_leaf'; // change page if needed
-});
+  });
 </script>
