@@ -1273,8 +1273,8 @@
       top: 0;
       width: 100%;
       z-index: 2000;
-      /* Higher than the nav-overlay */
       transition: background-color 0.3s ease;
+      background-color: black;
     }
 
     /* This class will be applied on scroll OR when the menu is open */
@@ -1440,6 +1440,14 @@
       font-weight: 300 !important;
       font-size: 16px !important;
     }
+
+    .headerr {
+      background: url('{{ asset('edleader_hero.png') }}') no-repeat center center;
+      background-size: cover;
+      text-align: center;
+      padding: 60px 20px;
+      height: 611px;
+    }
   </style>
 </head>
 
@@ -1525,23 +1533,15 @@
   </nav>
 
   <!-- Header -->
-  <header>
+  <header class="headerr">
     <div class="container heroo" style="display: flex; justify-content: space-between; align-items: center;">
       <!-- Left Column: Image + Text -->
       <div class="left-column">
-        <img src="{{ asset('edleader_image_1.png') }}" alt="Small Mobile Mockup" class="top-image" />
-        <div class="text">
-          <h1 class="mont" style="text-align: left;
-    width: 72%;
-    font-size: 18px;
-    color: #1F455D!important;
-    font-weight: 400;">Empowering Education Leaders: A Deep Dive into EdLeader 21's Mobile App UX</h1>
-        </div>
+
       </div>
 
       <!-- Right Column: Large Image -->
       <div class="right-column">
-        <img src="{{ asset('edleader_image_2.png') }}" alt="Large Mobile Mockup" />
       </div>
     </div>
   </header>
@@ -1661,39 +1661,82 @@
 
   <!-- Design Solution -->
   <h4 class="text-center mont_bold_seven_eightteen">🧩 Design Solution</h4>
-  <section class="design-solution" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;">
-    <p class="text-center karla_regular_four_sixteen" style="width: 55%;
-    margin: 0 auto;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M5.40875 8.5905V14H8.59056V8.59049H14V5.40868L8.59056 5.40868V0H5.40875V5.40868L0 5.40868V8.5905H5.40875Z"
-          fill="#333034" />
-      </svg> EdLeader 21 app offers light and dark modes. Dark mode is easier on the eyes in low light and reduces
-      battery usage.</p>
+    <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
+        <div class="center" style="overflow: hidden;">
+            <div class="image-block" style="display: flex; width: 100%;">
+                <img src="{{ asset('edleader_1_1.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+                <img src="{{ asset('edleader_1_2.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+                <img src="{{ asset('edleader_1_3.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+                <img src="{{ asset('edleader_1_4.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
 
-    <div class="center">
-      <div class="image-block">
-        <img src="{{ asset('edleader_image_6.png') }}" alt="Final Design Mockup" class="img-fluid" />
-      </div>
-    </div>
-  </section>
+            </div>
+        </div>
+        <div class="number-nav" style="text-align: center; margin-top: 15px; font-family: sans-serif;"></div>
+    </section>
 
-  <div style="width: 50%;
-    margin: 0 auto;text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="202" height="29"
-      viewBox="0 0 202 29" fill="none">
-      <path
-        d="M72.9727 15.9023C73.8011 15.9023 74.4727 15.2308 74.4727 14.4023C74.4727 13.5739 73.8011 12.9023 72.9727 12.9023V15.9023ZM72.9727 12.9023H3.88453V15.9023H72.9727V12.9023Z"
-        fill="#B5B5B5" />
-      <path d="M15.3984 26.8008L2.998 14.4003L15.3984 1.99991" stroke="#B5B5B5" stroke-width="3"
-        stroke-linecap="round" />
-      <path
-        d="M129.66 12.9023C128.832 12.9023 128.16 13.5739 128.16 14.4023C128.16 15.2308 128.832 15.9023 129.66 15.9023L129.66 12.9023ZM129.66 15.9023L198.748 15.9023L198.748 12.9023L129.66 12.9023L129.66 15.9023Z"
-        fill="#383838" />
-      <path d="M187.234 2.00391L199.635 14.4043L187.234 26.8048" stroke="#383838" stroke-width="3"
-        stroke-linecap="round" />
-    </svg></div>
+
+
+    <script>
+        $(document).ready(function () {
+            $(document).ready(function () {
+                $('.design-solution').each(function () {
+                    const $slider = $(this);
+                    const $container = $slider.find('.image-block');
+                    const $nav = $slider.find('.number-nav');
+                    const images = $container.find('img');
+                    const total = images.length;
+                    let currentIndex = 0;
+                    let autoSlide;
+
+                    // 1. Generate Numbers based on image count
+                    images.each(function (index) {
+                        $nav.append(`<span class="nav-num" data-index="${index}" style="cursor:pointer; margin: 0 8px; font-size: 16px; color: #B5B5B5;">${index + 1}</span>`);
+                    });
+
+                    const $numbers = $nav.find('.nav-num');
+
+                    function updateSlider() {
+                        // Slide the container
+                        const percentage = -(currentIndex * 100);
+                        $container.css('transform', 'translateX(' + percentage + '%)');
+
+                        // Update Active Number Style
+                        $numbers.css({ 'color': '#B5B5B5', 'font-weight': 'normal', 'text-decoration': 'none' });
+                        $numbers.eq(currentIndex).css({ 'color': '#383838', 'font-weight': 'bold', 'text-decoration': 'underline' });
+                    }
+
+                    // 2. Click Logic
+                    $numbers.on('click', function () {
+                        currentIndex = $(this).data('index');
+                        updateSlider();
+                        resetTimer(); // Reset timer when user manually clicks
+                    });
+
+                    // 3. Auto-Play Logic (1 Second)
+                    function startTimer() {
+                        autoSlide = setInterval(function () {
+                            currentIndex = (currentIndex + 1) % total; // Loops back to 0
+                            updateSlider();
+                        }, 1000); // 1000ms = 1 second
+                    }
+
+                    function resetTimer() {
+                        clearInterval(autoSlide);
+                        startTimer();
+                    }
+
+                    // Initialize
+                    updateSlider();
+                    startTimer();
+                });
+            });
+        });
+    </script>
+
 
   <!-- Key Takeaways -->
   <section class="info center" style="width: 50%;

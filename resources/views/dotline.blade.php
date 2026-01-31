@@ -1273,8 +1273,8 @@
             top: 0;
             width: 100%;
             z-index: 2000;
-            /* Higher than the nav-overlay */
             transition: background-color 0.3s ease;
+            background-color: black;
         }
 
         /* This class will be applied on scroll OR when the menu is open */
@@ -1448,11 +1448,12 @@
         }
 
 
-        header {
-            background: url('http://localhost/purple_leaf/public/ecomm_bg.png') no-repeat center center;
+        .headerr {
+            background: url('{{ asset('dotline_hero.png') }}') no-repeat center center;
             background-size: cover;
             text-align: center;
             padding: 60px 20px;
+            height: 611px;
         }
     </style>
 </head>
@@ -1539,23 +1540,14 @@
     </nav>
 
     <!-- Header -->
-    <header>
+    <header class="headerr">
         <div class="container heroo" style="display: flex; justify-content: space-between; align-items: center;">
             <!-- Left Column: Image + Text -->
             <div class="left-column">
-                <img src="{{ asset('ecomm_top_left.png') }}" alt="Small Mobile Mockup" class="top-image" />
-                <div class="text">
-                    <h1 class="mont" style="text-align: left;
-    width: 72%;
-    font-size: 18px;
-    color: #1F455D!important;
-    font-weight: 400;">Imagine a place where people can communicate in the real world and inhabit the metaverse</h1>
-                </div>
             </div>
 
             <!-- Right Column: Large Image -->
             <div class="right-column">
-                <img src="{{ asset('ecomm_top_photo_top.png') }}" alt="Large Mobile Mockup" />
             </div>
         </div>
     </header>
@@ -1625,69 +1617,99 @@
     margin-bottom: 100px;">
         <div class="center">
             <div class="image-block">
-                <img src="{{ asset('karighorOne.png') }}" alt="Survey Results" class="img-fluid" />
+                <img src="{{ asset('dotlineOne.png') }}" alt="Survey Results" class="img-fluid" />
             </div>
         </div>
     </section>
 
-    <section class="info" style="    width: 85%;
-    margin: 0 auto;">
-        <div class="columns">
-            <div class="column text-left">
-                <div class="header">
-                    <h3 class="mont_bold_six_twenty_four">Research</h3>
-                </div>
-                <div class="subheader">
-                    <p class="mont_regular_three_sixteen" style="font-size: 20px;">Findings</p>
-                </div>
-            </div>
-            <div class="column text-left">
-                <h3 class="mont_bold_six_sixteen">1.Lack of digital infrastructure:</h3>
-                <p class="karla_regular_three_sixteen">The artisan community in Bangladesh lacks the necessary digital
-                    infrastructure to showcase their work and heritage crafting processes to a wider audience.</p>
-                <h3 class="mont_bold_six_sixteen">2.Technological barrier:</h3>
-                <p class="karla_regular_three_sixteen">Most artisans are not tech-savvy and find it challenging to use
-                    digital tools to showcase their work.</p>
-                <h3 class="mont_bold_six_sixteen">3.Need for community:</h3>
-                <p class="karla_regular_three_sixteen">Most artisans are not tech-savvy and find it challenging to use
-                    digital tools to showcase their work.</p>
-                <h3 class="mont_bold_six_sixteen">4.Video-based tools:</h3>
-                <p class="karla_regular_three_sixteen">Most artisans prefer video-based tools that can help them
-                    showcase their work and heritage craft processes more effectively.</p>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Key Takeaways -->
-    <section class="info center" style="width: 50%;
+    <h4 class="text-center mont_bold_seven_sixteen">2. Questionnaire</h4>
+    <section class="interview-results" style="width: 50%;
     margin: 0 auto;
     margin-top: 100px;
-    margin-bottom: 50px;
-    background: none;">
-        <p class="karla_regular_three_eighteen" style="text-align: left;">Based on our research, we conclude that there
-            is a need for a video-based tool that can make it easy for artisans in Bangladesh to digitize their heritage
-            craft processes and display their work. The tool should be user-friendly and cater to the needs of the
-            artisan community, such as community-building and knowledge exchange. Additionally, the tool should leverage
-            video-based features to make the process easier for artisans with limited tech proficiency.
-        </p>
+    margin-bottom: 100px;">
+        <div class="center">
+            <div class="image-block">
+                <img src="{{ asset('dotlineTwo.png') }}" alt="Survey Results" class="img-fluid" />
+            </div>
+        </div>
+    </section>
+
+
+    <h4 class="text-center mont_bold_seven_sixteen">3T. Notable Insights</h4>
+    <section class="interview-results" style="width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;">
+        <div class="center">
+            <div class="image-block">
+                <img src="{{ asset('dotlineThree.png') }}" alt="Survey Results" class="img-fluid" />
+            </div>
+        </div>
+    </section>
+
+    <h4 class="text-center mont_bold_seven_sixteen">4. Competitive Analysis</h4>
+    <section class="interview-results" style="width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;">
+        <div class="center">
+            <div class="image-block">
+                <img src="{{ asset('dotlineFour.png') }}" alt="Survey Results" class="img-fluid" />
+            </div>
+        </div>
     </section>
 
     <section class="info center" style="width: 50%;
     margin: 0 auto;
     margin-top: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     background: none;">
-        <h4 class="mont_bold_seven_sixteen" style="margin-bottom: 14%;">AN easy 5 step process</h4>
-        <p class="karla_regular_three_eighteen" style="text-align: left;">Through this feature, artisans can explain
-            their craft-making process and showcase their skills to a wider audience. It allows them to provide insights
-            into their craft and share their knowledge with other artisans, students, and enthusiasts. The guided video
-            templates provided by The Karighor Archive make the process of creating these videos easy and accessible,
-            even for those who may not have prior experience with video creation. This feature promotes knowledge
-            exchange and community building within the artisan community in Bangladesh, which is at the core of The
-            Karighor Archive's mission.</p>
+        <p class="karla_regular_three_eighteen" style="text-align: left;">After that a SWOT analysis was done for
+            DotOnline with regard to the other competitors.</p>
         <!-- <a href="#" class="btn-download mont_bold_seven_sixteen">Download PDF</a> -->
     </section>
+
+
+    <h4 class="text-center mont_bold_seven_sixteen">4. SWOT ANALYSIS</h4>
+    <section class="interview-results" style="width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;">
+        <div class="center">
+            <div class="image-block">
+                <img src="{{ asset('dotlineFive.png') }}" alt="Survey Results" class="img-fluid" />
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info center" style="width: 50%;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    background: none;">
+        <p class="karla_regular_three_eighteen" style="text-align: left;">In conclusion, DotOnline has the potential to
+            become a leading player in the bulk SMS market. Its user-friendly interface, affordable pricing, and
+            comprehensive reporting and analytics features are among its key strengths. The company must address the
+            limited integration with other systems and support for international SMS to fully realize its potential. By
+            focusing on these areas, DotOnline can position itself effectively in the market and capture a significant
+            share of the growing demand for bulk SMS solutions.</p>
+        <!-- <a href="#" class="btn-download mont_bold_seven_sixteen">Download PDF</a> -->
+    </section>
+
+    <h4 class="text-center mont_bold_seven_sixteen">1. User Persona</h4>
+    <section class="interview-results" style="width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;">
+        <div class="center">
+            <div class="image-block">
+                <img src="{{ asset('dotlineSix.png') }}" alt="Survey Results" class="img-fluid" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Takeaways -->
 
 
     <!-- Design Solution -->
@@ -1700,20 +1722,39 @@
         </span>
 
         <span class="mont_regular_five_twenty" style="margin-bottom: 13px;">
-            Mobile App
+            Web App
         </span>
 
     </p>
-    <section class="design-solution" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 100px;">
+    <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
+        <div class="center" style="overflow: hidden;">
+            <div class="image-block" style="display: flex; width: 100%;">
+                <img src="{{ asset('dotline_slider_1_1.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+                <img src="{{ asset('dotline_slider_1_2.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+                <img src="{{ asset('dotline_slider_1_3.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+                <img src="{{ asset('dotline_slider_1_4.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+                <img src="{{ asset('dotline_slider_1_5.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+                <img src="{{ asset('dotline_slider_1_6.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+                <img src="{{ asset('dotline_slider_1_7.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+                <img src="{{ asset('dotline_slider_1_8.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+                <img src="{{ asset('dotline_slider_1_9.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+                <img src="{{ asset('dotline_slider_1_10.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+                <img src="{{ asset('dotline_slider_1_12.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
 
-        <div class="center">
-            <div class="image-block">
-                <img src="{{ asset('karighorTwo.png') }}" alt="Final Design Mockup" class="img-fluid" />
             </div>
         </div>
+        <div class="number-nav" style="text-align: center; margin-top: 15px; font-family: sans-serif;"></div>
     </section>
 
 
@@ -1726,44 +1767,90 @@
         </span>
 
         <span class="mont_regular_five_twenty" style="margin-bottom: 13px;">
-            Web App
+            Responsiveness
         </span>
 
     </p>
-    <section class="design-solution" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 100px;">
-        <p class="text-center karla_regular_four_sixteen" style="width: 55%;
-    margin: 0 auto;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M5.40875 8.5905V14H8.59056V8.59049H14V5.40868L8.59056 5.40868V0H5.40875V5.40868L0 5.40868V8.5905H5.40875Z"
-                    fill="#333034" />
-            </svg> Use the filter narrow down
-            the type of craft you want to
-            know about.</p>
 
-        <div class="center">
-            <div class="image-block">
-                <img src="{{ asset('karighorThree.png') }}" alt="Final Design Mockup" class="img-fluid" />
+
+
+
+
+    <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
+        <div class="center" style="overflow: hidden;">
+            <div class="image-block" style="display: flex; width: 100%;">
+                <img src="{{ asset('dotline_slider_2_1.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+                <img src="{{ asset('dotline_slider_2_2.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+                <img src="{{ asset('dotline_slider_2_3.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+                <img src="{{ asset('dotline_slider_2_4.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+
             </div>
         </div>
+        <div class="number-nav" style="text-align: center; margin-top: 15px; font-family: sans-serif;"></div>
     </section>
 
-    <div style="width: 50%;
-    margin: 0 auto;text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="202" height="29"
-            viewBox="0 0 202 29" fill="none">
-            <path
-                d="M72.9727 15.9023C73.8011 15.9023 74.4727 15.2308 74.4727 14.4023C74.4727 13.5739 73.8011 12.9023 72.9727 12.9023V15.9023ZM72.9727 12.9023H3.88453V15.9023H72.9727V12.9023Z"
-                fill="#B5B5B5" />
-            <path d="M15.3984 26.8008L2.998 14.4003L15.3984 1.99991" stroke="#B5B5B5" stroke-width="3"
-                stroke-linecap="round" />
-            <path
-                d="M129.66 12.9023C128.832 12.9023 128.16 13.5739 128.16 14.4023C128.16 15.2308 128.832 15.9023 129.66 15.9023L129.66 12.9023ZM129.66 15.9023L198.748 15.9023L198.748 12.9023L129.66 12.9023L129.66 15.9023Z"
-                fill="#383838" />
-            <path d="M187.234 2.00391L199.635 14.4043L187.234 26.8048" stroke="#383838" stroke-width="3"
-                stroke-linecap="round" />
-        </svg></div>
+
+
+    <script>
+        $(document).ready(function () {
+            $(document).ready(function () {
+                $('.design-solution').each(function () {
+                    const $slider = $(this);
+                    const $container = $slider.find('.image-block');
+                    const $nav = $slider.find('.number-nav');
+                    const images = $container.find('img');
+                    const total = images.length;
+                    let currentIndex = 0;
+                    let autoSlide;
+
+                    // 1. Generate Numbers based on image count
+                    images.each(function (index) {
+                        $nav.append(`<span class="nav-num" data-index="${index}" style="cursor:pointer; margin: 0 8px; font-size: 16px; color: #B5B5B5;">${index + 1}</span>`);
+                    });
+
+                    const $numbers = $nav.find('.nav-num');
+
+                    function updateSlider() {
+                        // Slide the container
+                        const percentage = -(currentIndex * 100);
+                        $container.css('transform', 'translateX(' + percentage + '%)');
+
+                        // Update Active Number Style
+                        $numbers.css({ 'color': '#B5B5B5', 'font-weight': 'normal', 'text-decoration': 'none' });
+                        $numbers.eq(currentIndex).css({ 'color': '#383838', 'font-weight': 'bold', 'text-decoration': 'underline' });
+                    }
+
+                    // 2. Click Logic
+                    $numbers.on('click', function () {
+                        currentIndex = $(this).data('index');
+                        updateSlider();
+                        resetTimer(); // Reset timer when user manually clicks
+                    });
+
+                    // 3. Auto-Play Logic (1 Second)
+                    function startTimer() {
+                        autoSlide = setInterval(function () {
+                            currentIndex = (currentIndex + 1) % total; // Loops back to 0
+                            updateSlider();
+                        }, 1000); // 1000ms = 1 second
+                    }
+
+                    function resetTimer() {
+                        clearInterval(autoSlide);
+                        startTimer();
+                    }
+
+                    // Initialize
+                    updateSlider();
+                    startTimer();
+                });
+            });
+        });
+    </script>
 
     <!-- Key Takeaways -->
     <section class="info center" style="width: 50%;

@@ -1180,6 +1180,41 @@
         transform: translateY(0);
       }
     }
+
+    .image-wrapper {
+      display: block;
+      /* makes wrapper shrink to image */
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 0.5rem;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .image-wrapper img {
+      display: block;
+      width: 100%;
+      /* fill wrapper */
+      height: auto;
+      border-radius: 0.5rem;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      transform-origin: center center;
+      /* zoom from center */
+    }
+
+    .image-wrapper:hover img {
+      transform: scale(1.15);
+      /* combined transform */
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      /* optional shadow */
+    }
+
+    .image-wrapper:hover {
+      transform: translateY(-5px);
+      /* combined transform */
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      /* optional shadow */
+      border-radius: 0.5rem;
+    }
   </style>
 </head>
 
@@ -1242,10 +1277,10 @@
             <li><a class="dropdown-item" href="{{ route('gim') }}">GM - GOODS IN MOTION</a></li>
             <li><a class="dropdown-item" href="{{ route('commchat') }}">COMCHAT METAVERSE MESSENGER</a></li>
             <li><a class="dropdown-item" href="{{ route('londonhealth') }}">LONDON HEALTH</a></li>
-            <!-- <li><a class="dropdown-item" href="{{ route('dotline') }}">DOTONLINE BULK SMS</a></li> -->
-            <!-- <li><a class="dropdown-item" href="{{ route('karighor') }}">KARCHER</a></li>
-            <li><a class="dropdown-item" href="{{ route('eskimi') }}">ESHIN</a></li> -->
-            <li><a class="dropdown-item" href="{{ route('edleader') }}">EGLOBALER 21</a></li>
+            <li><a class="dropdown-item" href="{{ route('dotline') }}">DOTONLINE BULK SMS</a></li>
+            <li><a class="dropdown-item" href="{{ route('karighor') }}">KARIGHOR</a></li>
+            <li><a class="dropdown-item" href="{{ route('eskimi') }}">ESKIMI</a></li>
+            <li><a class="dropdown-item" href="{{ route('edleader') }}">EDLEADER</a></li>
             <li><a class="dropdown-item" href="{{ route('becomeaclient') }}">BECOME A CLIENT</a></li>
           </ul>
           </li>
@@ -1259,9 +1294,7 @@
             <a class="nav-link" data-target="blog">Blog</a>
           </li>
         </ul>
-        <!-- Lets Talk Button -->
-        <a href="{{ route('becomeaclient') }}" class="btn btn-outline-light letstalk"
-          style="border-radius: 100px;">Let's Talk</a>
+
       </div>
     </div>
   </nav>
@@ -1331,7 +1364,9 @@
             <div class="project-card">
               <div class="justify-content-center down-card">
                 <div class="col-auto">
-                  <img src="{{ asset('recOne.png') }}" class="img-fluid rounded recImage" alt="Flex Note">
+                  <div class="image-wrapper">
+                    <img src="{{ asset('recOne.png') }}" class="" alt="Flex Note">
+                  </div>
                   <div class="mt-4 text-start">
                     <h6 class="mb-0">FLEXI NOTE</h6>
                     <small class="text-muted">Productivity</small>
@@ -1348,7 +1383,9 @@
             <div class="project-card upCard">
               <div class="justify-content-center">
                 <div class="col-auto">
-                  <img src="{{ asset('recTwo.png') }}" class="img-fluid rounded recImage" alt="GM Goods In Motion">
+                  <div class="image-wrapper">
+                    <img src="{{ asset('recTwo.png') }}" class="img-fluid rounded recImage" alt="GM Goods In Motion">
+                  </div>
                   <div class="mt-4 text-start">
                     <h6 class="mb-0">GM - GOODS IN MOTION</h6>
                     <small class="text-muted">Logistics Service</small>
@@ -1365,7 +1402,9 @@
             <div class="project-card">
               <div class="justify-content-center down-card">
                 <div class="col-auto">
-                  <img src="{{ asset('recThree.png') }}" class="img-fluid rounded recImage" alt="Eshin">
+                  <div class="image-wrapper">
+                    <img src="{{ asset('recThree.png') }}" class="img-fluid rounded recImage" alt="Eshin">
+                  </div>
                   <div class="mt-4 text-start">
                     <h6 class="mb-0">ESHIN</h6>
                     <small class="text-muted">Productivity</small>
@@ -1382,7 +1421,9 @@
             <div class="project-card upCard">
               <div class="justify-content-center">
                 <div class="col-auto">
-                  <img src="{{ asset('recFour.png') }}" class="img-fluid rounded recImage" alt="London Health">
+                  <div class="image-wrapper">
+                    <img src="{{ asset('recFour.png') }}" class="img-fluid rounded recImage" alt="London Health">
+                  </div>
                   <div class="mt-4 text-start">
                     <h6 class="mb-0">LONDON HEALTH</h6>
                     <small class="text-muted">HealthTech</small>
@@ -1399,7 +1440,9 @@
             <div class="project-card">
               <div class="justify-content-center down-card">
                 <div class="col-auto">
-                  <img src="{{ asset('recFive.png') }}" class="img-fluid rounded recImage" alt="Eglobaler 21">
+                  <div class="image-wrapper">
+                    <img src="{{ asset('recFive.png') }}" class="img-fluid rounded recImage" alt="Eglobaler 21">
+                  </div>
                   <div class="mt-4 text-start">
                     <h6 class="mb-0">EGLOBALER 21</h6>
                     <small class="text-muted">Logistics Service</small>
@@ -1416,7 +1459,9 @@
             <div class="project-card upCard">
               <div class="justify-content-center">
                 <div class="col-auto">
-                  <img src="{{ asset('recSix.png') }}" class="img-fluid rounded recImage" alt="Karcher">
+                  <div class="image-wrapper">
+                    <img src="{{ asset('recSix.png') }}" class="img-fluid rounded recImage" alt="Karcher">
+                  </div>
                   <div class="mt-4 text-start">
                     <h6 class="mb-0">KARCHER</h6>
                     <small class="text-muted">Productivity</small>
@@ -1433,7 +1478,9 @@
             <div class="project-card">
               <div class="justify-content-center down-card">
                 <div class="col-auto">
-                  <img src="{{ asset('recSeven.png') }}" class="img-fluid rounded recImage" alt="Comchat">
+                  <div class="image-wrapper">
+                    <img src="{{ asset('recSeven.png') }}" class="img-fluid rounded recImage" alt="Comchat">
+                  </div>
                   <div class="mt-4 text-start">
                     <h6 class="mb-0">COMCHAT METAVERSE MESSENGER</h6>
                     <small class="text-muted">Messaging Platform</small>
@@ -1450,7 +1497,9 @@
             <div class="project-card upCard">
               <div class="justify-content-center">
                 <div class="col-auto">
-                  <img src="{{ asset('recEight.png') }}" class="img-fluid rounded recImage" alt="Dotonline Bulk SMS">
+                  <div class="image-wrapper">
+                    <img src="{{ asset('recEight.png') }}" class="img-fluid rounded recImage" alt="Dotonline Bulk SMS">
+                  </div>
                   <div class="mt-4 text-start">
                     <h6 class="mb-0">DOTONLINE BULK SMS</h6>
                     <small class="text-muted">Communication</small>
@@ -1888,7 +1937,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     const scrollImage = document.querySelector('.clickable-scroll');
-    const aboutSection = document.getElementById('about'); // Make sure About section has id="about"
+    const aboutSection = document.getElementById('work'); // Make sure About section has id="about"
 
     scrollImage.addEventListener('click', function () {
       aboutSection.scrollIntoView({ behavior: 'smooth' });
@@ -1960,7 +2009,7 @@
     // Smooth scroll for clickable image
     $('.clickable-scroll').on('click', function () {
       $('html, body').animate({
-        scrollTop: $('#about').offset().top
+        scrollTop: $('#work').offset().top
       }, 800);
     });
   });
@@ -2148,20 +2197,20 @@
 
 
 <script>
-$(document).ready(function () {
+  $(document).ready(function () {
     const targetId = sessionStorage.getItem('scrollTarget');
 
     if (targetId) {
-        const target = $('#' + targetId);
+      const target = $('#' + targetId);
 
-        if (target.length) {
-            $('html, body').animate({
-                scrollTop: target.offset().top - 80
-            }, 800);
-        }
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top - 80
+        }, 800);
+      }
 
-        // clear after use
-        sessionStorage.removeItem('scrollTarget');
+      // clear after use
+      sessionStorage.removeItem('scrollTarget');
     }
-});
+  });
 </script>

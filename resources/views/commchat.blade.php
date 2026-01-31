@@ -1273,8 +1273,8 @@
       top: 0;
       width: 100%;
       z-index: 2000;
-      /* Higher than the nav-overlay */
       transition: background-color 0.3s ease;
+      background-color: black;
     }
 
     /* This class will be applied on scroll OR when the menu is open */
@@ -1397,7 +1397,7 @@
     .mont_regular_five_twenty {
       font-family: 'Mntserrat_regularo' !important;
       font-weight: 500 !important;
-      font-size: 20px!important;
+      font-size: 20px !important;
     }
 
     .karla_regular_three {
@@ -1449,10 +1449,11 @@
 
 
     header {
-      background: url('http://localhost/purple_leaf/public/ecomm_bg.png') no-repeat center center;
+      background: url('{{ asset('ecomm_bg.png') }}') no-repeat center center;
       background-size: cover;
       text-align: center;
       padding: 60px 20px;
+      height: 611px;
     }
   </style>
 </head>
@@ -1602,11 +1603,16 @@
     <div class="columns">
       <div class="column text-left">
         <h3 class="mont_bold_six_twenty_four">The Problem</h3>
-        <p class="karla_regular_three_sixteen">Millions of people are concerned about the risk of their personal information getting leaked or privacy being violated. The assurance of secure protection offered by many platforms has proven to be inadequate. CommChat offered a solution to this problem, allowing people to communicate with complete privacy and security on a trustworthy platform online.</p>
+        <p class="karla_regular_three_sixteen">Millions of people are concerned about the risk of their personal
+          information getting leaked or privacy being violated. The assurance of secure protection offered by many
+          platforms has proven to be inadequate. CommChat offered a solution to this problem, allowing people to
+          communicate with complete privacy and security on a trustworthy platform online.</p>
       </div>
       <div class="column text-left">
         <h3 class="mont_bold_six_twenty_four">Overview</h3>
-        <p class="karla_regular_three_sixteen">The CommChat system is an interface used primarily for user-to-user communication in the real world. It’s also used to interact with the inhabitants of the digital universe. Users may quickly jump in and out between these two realities depending on their needs.- paraphrase it</p>
+        <p class="karla_regular_three_sixteen">The CommChat system is an interface used primarily for user-to-user
+          communication in the real world. It’s also used to interact with the inhabitants of the digital universe.
+          Users may quickly jump in and out between these two realities depending on their needs.- paraphrase it</p>
       </div>
     </div>
   </section>
@@ -1623,8 +1629,10 @@
         </div>
       </div>
       <div class="column text-left">
-        <p class="karla_regular_three_sixteen">Interviews were conducted with metaverse users to gain deeper insights into their communication needs and preferences within the virtual world. The interviews were conducted one-on-one and lasted approximately 30-45 minutes each. The following topics were covered in the interviews:
-</p>
+        <p class="karla_regular_three_sixteen">Interviews were conducted with metaverse users to gain deeper insights
+          into their communication needs and preferences within the virtual world. The interviews were conducted
+          one-on-one and lasted approximately 30-45 minutes each. The following topics were covered in the interviews:
+        </p>
       </div>
     </div>
   </section>
@@ -1656,84 +1664,121 @@
 
   <!-- Design Solution -->
   <h4 class="text-center mont_bold_seven_eightteen">🧩 Design Solution</h4>
-<p class="text-center karla_regular_four_sixteen"
-   style="width:50%; margin:0 auto; text-align:left!important; display:flex; align-items:center;">
-  
-  <span style="color:#5A2CEA; font-weight:700; font-size:33px; margin-right:8px;">
-    *
-  </span>
+  <p class="text-center karla_regular_four_sixteen"
+    style="width:50%; margin:0 auto; text-align:left!important; display:flex; align-items:center;">
 
-  <span class="mont_regular_five_twenty" style="margin-bottom: 13px;">
-    Mobile App
-  </span>
+    <span style="color:#5A2CEA; font-weight:700; font-size:33px; margin-right:8px;">
+      *
+    </span>
 
-</p>
-  <section class="design-solution" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 100px;">
-    <p class="text-center karla_regular_four_sixteen" style="width: 55%;
-    margin: 0 auto;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M5.40875 8.5905V14H8.59056V8.59049H14V5.40868L8.59056 5.40868V0H5.40875V5.40868L0 5.40868V8.5905H5.40875Z"
-          fill="#333034" />
-      </svg> EdLeader 21 app offers light and dark modes. Dark mode is easier on the eyes in low light and reduces
-      battery usage.</p>
+    <span class="mont_regular_five_twenty" style="margin-bottom: 13px;">
+      Mobile App
+    </span>
 
-    <div class="center">
-      <div class="image-block">
-        <img src="{{ asset('edleader_image_6.png') }}" alt="Final Design Mockup" class="img-fluid" />
-      </div>
-    </div>
-  </section>
+  </p>
+    <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
+        <div class="center" style="overflow: hidden;">
+            <div class="image-block" style="display: flex; width: 100%;">
+                <img src="{{ asset('commchat_1_1.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+                <img src="{{ asset('commchat_1_2.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+                <img src="{{ asset('commchat_1_3.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+
+            </div>
+        </div>
+        <div class="number-nav" style="text-align: center; margin-top: 15px; font-family: sans-serif;"></div>
+    </section>
 
 
 
   <p class="text-center karla_regular_four_sixteen"
-   style="width:50%; margin:0 auto; text-align:left!important; display:flex; align-items:center;">
-  
-  <span style="color:#5A2CEA; font-weight:700; font-size:33px; margin-right:8px;">
-    *
-  </span>
+    style="width:50%; margin:0 auto; text-align:left!important; display:flex; align-items:center;">
 
-  <span class="mont_regular_five_twenty" style="margin-bottom: 13px;">
-    Web App
-  </span>
+    <span style="color:#5A2CEA; font-weight:700; font-size:33px; margin-right:8px;">
+      *
+    </span>
 
-</p>
-  <section class="design-solution" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 100px;">
-    <p class="text-center karla_regular_four_sixteen" style="width: 55%;
-    margin: 0 auto;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M5.40875 8.5905V14H8.59056V8.59049H14V5.40868L8.59056 5.40868V0H5.40875V5.40868L0 5.40868V8.5905H5.40875Z"
-          fill="#333034" />
-      </svg> EdLeader 21 app offers light and dark modes. Dark mode is easier on the eyes in low light and reduces
-      battery usage.</p>
+    <span class="mont_regular_five_twenty" style="margin-bottom: 13px;">
+      Web App
+    </span>
 
-    <div class="center">
-      <div class="image-block">
-        <img src="{{ asset('ecommThirdBig.png') }}" alt="Final Design Mockup" class="img-fluid" />
-      </div>
-    </div>
-  </section>
+  </p>
+    <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
+        <div class="center" style="overflow: hidden;">
+            <div class="image-block" style="display: flex; width: 100%;">
+                <img src="{{ asset('commchat_2_1.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+                <img src="{{ asset('commchat_2_2.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
+                <img src="{{ asset('commchat_2_3.png') }}"
+                    style="min-width: 100%; transition: transform 0.5s ease;">
 
-  <div style="width: 50%;
-    margin: 0 auto;text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="202" height="29"
-      viewBox="0 0 202 29" fill="none">
-      <path
-        d="M72.9727 15.9023C73.8011 15.9023 74.4727 15.2308 74.4727 14.4023C74.4727 13.5739 73.8011 12.9023 72.9727 12.9023V15.9023ZM72.9727 12.9023H3.88453V15.9023H72.9727V12.9023Z"
-        fill="#B5B5B5" />
-      <path d="M15.3984 26.8008L2.998 14.4003L15.3984 1.99991" stroke="#B5B5B5" stroke-width="3"
-        stroke-linecap="round" />
-      <path
-        d="M129.66 12.9023C128.832 12.9023 128.16 13.5739 128.16 14.4023C128.16 15.2308 128.832 15.9023 129.66 15.9023L129.66 12.9023ZM129.66 15.9023L198.748 15.9023L198.748 12.9023L129.66 12.9023L129.66 15.9023Z"
-        fill="#383838" />
-      <path d="M187.234 2.00391L199.635 14.4043L187.234 26.8048" stroke="#383838" stroke-width="3"
-        stroke-linecap="round" />
-    </svg></div>
+
+            </div>
+        </div>
+        <div class="number-nav" style="text-align: center; margin-top: 15px; font-family: sans-serif;"></div>
+    </section>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $(document).ready(function () {
+                $('.design-solution').each(function () {
+                    const $slider = $(this);
+                    const $container = $slider.find('.image-block');
+                    const $nav = $slider.find('.number-nav');
+                    const images = $container.find('img');
+                    const total = images.length;
+                    let currentIndex = 0;
+                    let autoSlide;
+
+                    // 1. Generate Numbers based on image count
+                    images.each(function (index) {
+                        $nav.append(`<span class="nav-num" data-index="${index}" style="cursor:pointer; margin: 0 8px; font-size: 16px; color: #B5B5B5;">${index + 1}</span>`);
+                    });
+
+                    const $numbers = $nav.find('.nav-num');
+
+                    function updateSlider() {
+                        // Slide the container
+                        const percentage = -(currentIndex * 100);
+                        $container.css('transform', 'translateX(' + percentage + '%)');
+
+                        // Update Active Number Style
+                        $numbers.css({ 'color': '#B5B5B5', 'font-weight': 'normal', 'text-decoration': 'none' });
+                        $numbers.eq(currentIndex).css({ 'color': '#383838', 'font-weight': 'bold', 'text-decoration': 'underline' });
+                    }
+
+                    // 2. Click Logic
+                    $numbers.on('click', function () {
+                        currentIndex = $(this).data('index');
+                        updateSlider();
+                        resetTimer(); // Reset timer when user manually clicks
+                    });
+
+                    // 3. Auto-Play Logic (1 Second)
+                    function startTimer() {
+                        autoSlide = setInterval(function () {
+                            currentIndex = (currentIndex + 1) % total; // Loops back to 0
+                            updateSlider();
+                        }, 1000); // 1000ms = 1 second
+                    }
+
+                    function resetTimer() {
+                        clearInterval(autoSlide);
+                        startTimer();
+                    }
+
+                    // Initialize
+                    updateSlider();
+                    startTimer();
+                });
+            });
+        });
+    </script>
 
   <!-- Key Takeaways -->
   <section class="info center" style="width: 50%;
@@ -1742,17 +1787,24 @@
     margin-bottom: 50px;
     background: none;">
     <h4 class="mont_bold_seven_sixteen" style="margin-bottom: 14%;">Evaluation</h4>
-    <p class="karla_regular_three_eighteen" style="text-align: left;">The messaging app was tested with a group of users, who reported that it was easy to use and met their needs for fast and accessible communication. The app's simple and intuitive design was well-received, and users appreciated the ability to send multimedia messages and initiate voice and video calls from within the app.
-</p>
+    <p class="karla_regular_three_eighteen" style="text-align: left;">The messaging app was tested with a group of
+      users, who reported that it was easy to use and met their needs for fast and accessible communication. The app's
+      simple and intuitive design was well-received, and users appreciated the ability to send multimedia messages and
+      initiate voice and video calls from within the app.
+    </p>
   </section>
 
-    <section class="info center" style="width: 50%;
+  <section class="info center" style="width: 50%;
     margin: 0 auto;
     margin-top: 0px;
     margin-bottom: 100px;
     background: none;">
     <h4 class="mont_bold_seven_sixteen" style="margin-bottom: 14%;">Conclusion</h4>
-    <p class="karla_regular_three_eighteen" style="text-align: left;">The Commchat messaging app provides a seamless communication experience for users in the virtual world. Its minimalist design and support for text and multimedia messages make it easy for users to connect and communicate with others in real life and also in the metaverse. With features such as group messaging and voice and video calls, the app meets the needs of users and provides a platform for secure and private conversations.</p>
+    <p class="karla_regular_three_eighteen" style="text-align: left;">The Commchat messaging app provides a seamless
+      communication experience for users in the virtual world. Its minimalist design and support for text and multimedia
+      messages make it easy for users to connect and communicate with others in real life and also in the metaverse.
+      With features such as group messaging and voice and video calls, the app meets the needs of users and provides a
+      platform for secure and private conversations.</p>
     <a href="#" class="btn-download mont_bold_seven_sixteen">Download PDF</a>
   </section>
 
