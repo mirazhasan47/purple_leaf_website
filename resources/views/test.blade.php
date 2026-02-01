@@ -1061,20 +1061,19 @@
 
 
     .cookie-consent {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    max-width: 600px;
-    margin: auto;
-    background: #ffffff;
-    padding: 15px 20px;
-    border-radius: 12px;
-    display: none;
-    z-index: 9999;
-    font-size: 14px;
-}
-
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      max-width: 600px;
+      margin: auto;
+      background: #ffffff;
+      padding: 15px 20px;
+      border-radius: 12px;
+      display: none;
+      z-index: 9999;
+      font-size: 14px;
+    }
   </style>
 </head>
 
@@ -1082,11 +1081,11 @@
 
   <header class="custom-header">
     <a class="navbar-brand" href="#">
-      <img src="http://localhost/purple_leaf/public/LogoOne.png" alt="Logo">
+      <img src="{{ asset('LogoOne.png') }}" alt="Logo">
     </a>
 
     <button class="menu-toggle" onclick="toggleMenu()">
-      <img id="toggleIcon" src="http://localhost/purple_leaf/public/menuIcon.png" alt="Menu">
+      <img id="toggleIcon" src="{{ asset('menuIcon.png') }}" alt="Menu">
     </button>
   </header>
 
@@ -1221,20 +1220,20 @@
 </body>
 
 <div id="cookieConsent" class="cookie-consent shadow-lg">
-    <div id="cookieContent" class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
-        <p class="mb-0">
-            We use cookies to improve your experience. By clicking "Accept", you agree to our cookie policy.
-        </p>
-        <button id="acceptCookies" class="btn btn-primary btn-sm">
-            Accept
-        </button>
-    </div>
+  <div id="cookieContent" class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+    <p class="mb-0">
+      We use cookies to improve your experience. By clicking "Accept", you agree to our cookie policy.
+    </p>
+    <button id="acceptCookies" class="btn btn-primary btn-sm">
+      Accept
+    </button>
+  </div>
 
-    <div id="cookieThanks" class="text-center d-none">
-        <p class="mb-0 fw-semibold text-success">
-            ✅ Thank you for accepting cookies!
-        </p>
-    </div>
+  <div id="cookieThanks" class="text-center d-none">
+    <p class="mb-0 fw-semibold text-success">
+      ✅ Thank you for accepting cookies!
+    </p>
+  </div>
 </div>
 
 
@@ -1357,7 +1356,7 @@
   // Select the logo element
   const navLogo = document.querySelector('.navbar-brand');
 
-  const menuIconPath = "http://localhost/purple_leaf/public/menuIcon.png";
+  const menuIconPath = "{{ asset('menuIcon.png') }}";
   const closeIconPath = "https://cdn-icons-png.flaticon.com/512/1828/1828778.png";
 
   function toggleMenu() {
@@ -1422,42 +1421,39 @@
 
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", function () {
 
     const popup = document.getElementById('cookieConsent');
     const content = document.getElementById('cookieContent');
     const thanks = document.getElementById('cookieThanks');
 
-    fetch('http://localhost/purple_leaf/public/cookie-status')
-        .then(res => res.json())
-        .then(data => {
-            if (!data.accepted) {
-                popup.style.display = 'block';
-            }
-        });
+    fetch("{{ url('/cookie-status') }}")
+      .then(res => res.json())
+      .then(data => {
+        if (!data.accepted) {
+          popup.style.display = 'block';
+        }
+      });
 
     document.getElementById('acceptCookies').addEventListener('click', function () {
 
-        fetch("http://localhost/purple_leaf/public/cookie-accept", {
-            method: "POST",
-            headers: {
-                "X-CSRF-TOKEN": "{{ csrf_token() }}",
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({ accepted: true })
-        }).then(() => {
-            content.classList.add('d-none');
-            thanks.classList.remove('d-none');
+      fetch("{{ url('/cookie-accept') }}", {
+        method: "POST",
+        headers: {
+          "X-CSRF-TOKEN": "{{ csrf_token() }}",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ accepted: true })
+      }).then(() => {
+        content.classList.add('d-none');
+        thanks.classList.remove('d-none');
 
-            setTimeout(() => {
-                popup.style.display = 'none';
-            }, 2000);
-        });
+        setTimeout(() => {
+          popup.style.display = 'none';
+        }, 2000);
+      });
 
     });
 
-});
+  });
 </script>
-
-
-

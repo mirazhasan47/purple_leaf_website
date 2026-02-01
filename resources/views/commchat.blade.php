@@ -1462,19 +1462,19 @@
 
   <header class="custom-header">
     <a class="navbar-brand" href="#">
-      <img src="http://localhost/purple_leaf/public/LogoOne.png" alt="Logo">
+      <img src="{{ asset('LogoOne.png') }}" alt="Logo">
     </a>
 
     <button class="menu-toggle" onclick="toggleMenu()">
-      <img id="toggleIcon" src="http://localhost/purple_leaf/public/menuIcon.png" alt="Menu">
+      <img id="toggleIcon" src="{{ asset('menuIcon.png') }}" alt="Menu">
     </button>
   </header>
 
   <nav class="nav-overlay" id="navOverlay">
     <ul class="nav-linkss">
-      <li><a data-target="services" onclick="toggleMenu()">Work</a></li>
-      <li><a data-target="about" onclick="toggleMenu()">Services</a></li>
-      <li><a data-target="blog" onclick="toggleMenu()">About</a></li>
+      <li><a data-target="services" class="nav-link" onclick="toggleMenu()">Work</a></li>
+      <li><a data-target="about" class="nav-link" onclick="toggleMenu()">Services</a></li>
+      <li><a data-target="blog" class="nav-link" onclick="toggleMenu()">About</a></li>
     </ul>
   </nav>
 
@@ -1676,20 +1676,17 @@
     </span>
 
   </p>
-    <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
-        <div class="center" style="overflow: hidden;">
-            <div class="image-block" style="display: flex; width: 100%;">
-                <img src="{{ asset('commchat_1_1.png') }}"
-                    style="min-width: 100%; transition: transform 0.5s ease;">
-                <img src="{{ asset('commchat_1_2.png') }}"
-                    style="min-width: 100%; transition: transform 0.5s ease;">
-                <img src="{{ asset('commchat_1_3.png') }}"
-                    style="min-width: 100%; transition: transform 0.5s ease;">
+  <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
+    <div class="center" style="overflow: hidden;">
+      <div class="image-block" style="display: flex; width: 100%;">
+        <img src="{{ asset('commchat_1_1.png') }}" style="min-width: 100%; transition: transform 0.5s ease;">
+        <img src="{{ asset('commchat_1_2.png') }}" style="min-width: 100%; transition: transform 0.5s ease;">
+        <img src="{{ asset('commchat_1_3.png') }}" style="min-width: 100%; transition: transform 0.5s ease;">
 
-            </div>
-        </div>
-        <div class="number-nav" style="text-align: center; margin-top: 15px; font-family: sans-serif;"></div>
-    </section>
+      </div>
+    </div>
+    <div class="number-nav" style="text-align: center; margin-top: 15px; font-family: sans-serif;"></div>
+  </section>
 
 
 
@@ -1705,80 +1702,77 @@
     </span>
 
   </p>
-    <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
-        <div class="center" style="overflow: hidden;">
-            <div class="image-block" style="display: flex; width: 100%;">
-                <img src="{{ asset('commchat_2_1.png') }}"
-                    style="min-width: 100%; transition: transform 0.5s ease;">
-                <img src="{{ asset('commchat_2_2.png') }}"
-                    style="min-width: 100%; transition: transform 0.5s ease;">
-                <img src="{{ asset('commchat_2_3.png') }}"
-                    style="min-width: 100%; transition: transform 0.5s ease;">
+  <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
+    <div class="center" style="overflow: hidden;">
+      <div class="image-block" style="display: flex; width: 100%;">
+        <img src="{{ asset('commchat_2_1.png') }}" style="min-width: 100%; transition: transform 0.5s ease;">
+        <img src="{{ asset('commchat_2_2.png') }}" style="min-width: 100%; transition: transform 0.5s ease;">
+        <img src="{{ asset('commchat_2_3.png') }}" style="min-width: 100%; transition: transform 0.5s ease;">
 
 
-            </div>
-        </div>
-        <div class="number-nav" style="text-align: center; margin-top: 15px; font-family: sans-serif;"></div>
-    </section>
+      </div>
+    </div>
+    <div class="number-nav" style="text-align: center; margin-top: 15px; font-family: sans-serif;"></div>
+  </section>
 
 
 
-    <script>
-        $(document).ready(function () {
-            $(document).ready(function () {
-                $('.design-solution').each(function () {
-                    const $slider = $(this);
-                    const $container = $slider.find('.image-block');
-                    const $nav = $slider.find('.number-nav');
-                    const images = $container.find('img');
-                    const total = images.length;
-                    let currentIndex = 0;
-                    let autoSlide;
+  <script>
+    $(document).ready(function () {
+      $(document).ready(function () {
+        $('.design-solution').each(function () {
+          const $slider = $(this);
+          const $container = $slider.find('.image-block');
+          const $nav = $slider.find('.number-nav');
+          const images = $container.find('img');
+          const total = images.length;
+          let currentIndex = 0;
+          let autoSlide;
 
-                    // 1. Generate Numbers based on image count
-                    images.each(function (index) {
-                        $nav.append(`<span class="nav-num" data-index="${index}" style="cursor:pointer; margin: 0 8px; font-size: 16px; color: #B5B5B5;">${index + 1}</span>`);
-                    });
+          // 1. Generate Numbers based on image count
+          images.each(function (index) {
+            $nav.append(`<span class="nav-num" data-index="${index}" style="cursor:pointer; margin: 0 8px; font-size: 16px; color: #B5B5B5;">${index + 1}</span>`);
+          });
 
-                    const $numbers = $nav.find('.nav-num');
+          const $numbers = $nav.find('.nav-num');
 
-                    function updateSlider() {
-                        // Slide the container
-                        const percentage = -(currentIndex * 100);
-                        $container.css('transform', 'translateX(' + percentage + '%)');
+          function updateSlider() {
+            // Slide the container
+            const percentage = -(currentIndex * 100);
+            $container.css('transform', 'translateX(' + percentage + '%)');
 
-                        // Update Active Number Style
-                        $numbers.css({ 'color': '#B5B5B5', 'font-weight': 'normal', 'text-decoration': 'none' });
-                        $numbers.eq(currentIndex).css({ 'color': '#383838', 'font-weight': 'bold', 'text-decoration': 'underline' });
-                    }
+            // Update Active Number Style
+            $numbers.css({ 'color': '#B5B5B5', 'font-weight': 'normal', 'text-decoration': 'none' });
+            $numbers.eq(currentIndex).css({ 'color': '#383838', 'font-weight': 'bold', 'text-decoration': 'underline' });
+          }
 
-                    // 2. Click Logic
-                    $numbers.on('click', function () {
-                        currentIndex = $(this).data('index');
-                        updateSlider();
-                        resetTimer(); // Reset timer when user manually clicks
-                    });
+          // 2. Click Logic
+          $numbers.on('click', function () {
+            currentIndex = $(this).data('index');
+            updateSlider();
+            resetTimer(); // Reset timer when user manually clicks
+          });
 
-                    // 3. Auto-Play Logic (1 Second)
-                    function startTimer() {
-                        autoSlide = setInterval(function () {
-                            currentIndex = (currentIndex + 1) % total; // Loops back to 0
-                            updateSlider();
-                        }, 1000); // 1000ms = 1 second
-                    }
+          // 3. Auto-Play Logic (1 Second)
+          function startTimer() {
+            autoSlide = setInterval(function () {
+              currentIndex = (currentIndex + 1) % total; // Loops back to 0
+              updateSlider();
+            }, 1000); // 1000ms = 1 second
+          }
 
-                    function resetTimer() {
-                        clearInterval(autoSlide);
-                        startTimer();
-                    }
+          function resetTimer() {
+            clearInterval(autoSlide);
+            startTimer();
+          }
 
-                    // Initialize
-                    updateSlider();
-                    startTimer();
-                });
-            });
+          // Initialize
+          updateSlider();
+          startTimer();
         });
-    </script>
+      });
+    });
+  </script>
 
   <!-- Key Takeaways -->
   <section class="info center" style="width: 50%;

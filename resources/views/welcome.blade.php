@@ -1215,26 +1215,30 @@
       /* optional shadow */
       border-radius: 0.5rem;
     }
+
+    .nav-link {
+      cursor: pointer;
+    }
   </style>
 </head>
 
 <body>
 
   <header class="custom-header">
-    <a class="navbar-brand" data-target="">
-      <img src="http://localhost/purple_leaf_lgf_mix/public/LogoOne.png" alt="Logo">
+    <a class="navbar-brand" href="#">
+      <img src="{{ asset('LogoOne.png') }}" alt="Logo">
     </a>
 
     <button class="menu-toggle" onclick="toggleMenu()">
-      <img id="toggleIcon" src="http://localhost/purple_leaf_lgf_mix/public/menuIcon.png" alt="Menu">
+      <img id="toggleIcon" src="{{ asset('menuIcon.png') }}" alt="Menu">
     </button>
   </header>
 
   <nav class="nav-overlay" id="navOverlay">
     <ul class="nav-linkss">
-      <li><a data-target="services" onclick="toggleMenu()">Work</a></li>
-      <li><a data-target="about" onclick="toggleMenu()">Services</a></li>
-      <li><a data-target="blog" onclick="toggleMenu()">About</a></li>
+      <li><a data-target="work" class="nav-link" onclick="toggleMenu()">Work</a></li>
+      <li><a data-target="services" class="nav-link" onclick="toggleMenu()">Services</a></li>
+      <li><a data-target="about" class="nav-link" onclick="toggleMenu()">About</a></li>
     </ul>
   </nav>
 
@@ -2022,7 +2026,7 @@
   // Select the logo element
   const navLogo = document.querySelector('.navbar-brand');
 
-  const menuIconPath = "http://localhost/purple_leaf_lgf_mix/public/menuIcon.png";
+    const menuIconPath = "{{ asset('menuIcon.png') }}";
   const closeIconPath = "https://cdn-icons-png.flaticon.com/512/1828/1828778.png";
 
   function toggleMenu() {
@@ -2093,7 +2097,7 @@
     const content = document.getElementById('cookieContent');
     const thanks = document.getElementById('cookieThanks');
 
-    fetch('http://localhost/purple_leaf_lgf_mix/public/cookie-status')
+    fetch('{{ url("/cookie-status") }}')
       .then(res => res.json())
       .then(data => {
         if (!data.accepted) {
@@ -2103,7 +2107,7 @@
 
     document.getElementById('acceptCookies').addEventListener('click', function () {
 
-      fetch("http://localhost/purple_leaf_lgf_mix/public/cookie-accept", {
+      fetch("{{ url('/cookie-accept') }}", {
         method: "POST",
         headers: {
           "X-CSRF-TOKEN": "{{ csrf_token() }}",

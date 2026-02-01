@@ -1455,19 +1455,19 @@
 
   <header class="custom-header">
     <a class="navbar-brand" href="#">
-      <img src="http://localhost/purple_leaf/public/LogoOne.png" alt="Logo">
+      <img src="{{ asset('LogoOne.png') }}" alt="Logo">
     </a>
 
     <button class="menu-toggle" onclick="toggleMenu()">
-      <img id="toggleIcon" src="http://localhost/purple_leaf/public/menuIcon.png" alt="Menu">
+      <img id="toggleIcon" src="{{ asset('menuIcon.png') }}" alt="Menu">
     </button>
   </header>
 
   <nav class="nav-overlay" id="navOverlay">
     <ul class="nav-linkss">
-      <li><a data-target="services" onclick="toggleMenu()">Work</a></li>
-      <li><a data-target="about" onclick="toggleMenu()">Services</a></li>
-      <li><a data-target="blog" onclick="toggleMenu()">About</a></li>
+      <li><a data-target="services" class="nav-link" onclick="toggleMenu()">Work</a></li>
+      <li><a data-target="about" class="nav-link" onclick="toggleMenu()">Services</a></li>
+      <li><a data-target="blog" class="nav-link" onclick="toggleMenu()">About</a></li>
     </ul>
   </nav>
 
