@@ -1448,18 +1448,99 @@
     }
 
 
-    header {
-      background: url('{{ asset('ecomm_bg.png') }}') no-repeat center center;
+    .headerr {
+      background: url('{{ asset('comm_chat_bg.png') }}') no-repeat center center;
       background-size: cover;
       text-align: center;
       padding: 60px 20px;
       height: 611px;
     }
+
+    @media (max-width: 768px) {
+      .headerr {
+        background: url('{{ asset('commchat_mb.png') }}') no-repeat center center;
+        background-size: cover;
+        height: auto;
+        height: 210px;
+        margin-top: 50px;
+        /* optional, usually better for mobile */
+      }
+    }
+
+
+    @media (max-width: 768px) {
+      .headerr {
+        background: url('{{ asset('flexinote_mb.png') }}') no-repeat center center;
+        background-size: cover;
+        height: auto;
+        /* optional, usually better for mobile */
+        height: 210px;
+        margin-top: 50px;
+      }
+    }
+
+
+
+    @media (max-width: 767px) {
+
+      .mobile-no-break,
+      .mobile-no-break * {
+        text-align: left !important;
+        font-size: 12px !important;
+
+        /* 🚫 prevent line breaks */
+        white-space: nowrap;
+        word-break: keep-all;
+        overflow-wrap: normal;
+      }
+
+      /* override Bootstrap centering */
+      .mobile-no-break .d-flex.justify-content-center {
+        justify-content: flex-start !important;
+      }
+    }
+
+    .mobile-no-break {
+      overflow-x: hidden;
+    }
+
+    /* Target devices with width 768px or smaller (Tablets and Mobiles) */
+    @media (max-width: 768px) {
+
+      /* Target sections and headers using their class names or tags */
+      section.container,
+      section.info,
+      section.interview-results,
+      section.personas,
+      section.design-solution,
+      .container.widthControl,
+      .headerr .container {
+        width: 85% !important;
+        max-width: 85% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      /* Fix for the Design Solution images to ensure they stay responsive */
+      .design-solution {
+        width: 85% !important;
+      }
+
+      /* Optional: Ensure text alignment looks good on mobile */
+      .column.text-left {
+        text-align: center !important;
+      }
+
+      /* Ensure the left/right columns in header stack or resize */
+      .heroo {
+        flex-direction: column;
+        width: 85% !important;
+      }
+    }
   </style>
 </head>
 
 <body>
-
   <header class="custom-header">
     <a class="navbar-brand" href="#">
       <img src="{{ asset('LogoOne.png') }}" alt="Logo">
@@ -1540,29 +1621,21 @@
   </nav>
 
   <!-- Header -->
-  <header>
+  <header class="headerr">
     <div class="container heroo" style="display: flex; justify-content: space-between; align-items: center;">
       <!-- Left Column: Image + Text -->
       <div class="left-column">
-        <img src="{{ asset('ecomm_top_left.png') }}" alt="Small Mobile Mockup" class="top-image" />
-        <div class="text">
-          <h1 class="mont" style="text-align: left;
-    width: 72%;
-    font-size: 18px;
-    color: #1F455D!important;
-    font-weight: 400;">Imagine a place where people can communicate in the real world and inhabit the metaverse</h1>
-        </div>
+
       </div>
 
       <!-- Right Column: Large Image -->
       <div class="right-column">
-        <img src="{{ asset('ecomm_top_photo_top.png') }}" alt="Large Mobile Mockup" />
       </div>
     </div>
   </header>
 
   <!-- Project Info -->
-  <section class="container py-5" style="width: 65%;">
+  <section class="container mobile-no-break py-5" style="width: 65%;">
     <h3 class="mont_bold_seven" style="    text-align: center;
     font-size: 20px;
     margin-bottom: 42px;">Project Info</h3>
@@ -1828,8 +1901,8 @@
               <h5 class="fw-bold text-nowrap" style="text-align: left;font-size: clamp(21px, 2vw, 1.25rem);">Portfolio
               </h5>
               <ul class="list-unstyled mb-0">
-                <li><a href="#" class="small text-decoration-none">Dribbble</a></li>
-                <li><a href="#" class="small text-decoration-none">Behance</a></li>
+                <li><a href="https://dribbble.com/Purple_Leaf" class="small text-decoration-none">Dribbble</a></li>
+                <li><a data-target="" class="small text-decoration-none">Behance</a></li>
               </ul>
             </div>
 
@@ -1837,9 +1910,9 @@
               <div style="min-width: fit-content;">
                 <h5 class="fw-bold text-nowrap" style="font-size: clamp(21px, 2vw, 1.25rem);">Social media</h5>
                 <ul class="list-unstyled mb-0">
-                  <li><a href="#" class="small text-decoration-none">Linkedin</a></li>
-                  <li><a href="#" class="small text-decoration-none">Facebook</a></li>
-                  <li><a href="#" class="small text-decoration-none">Instagram</a></li>
+                  <li><a href="https://www.linkedin.com/company/purpleleaf1/" class="small text-decoration-none">Linkedin</a></li>
+                  <li><a href="https://www.facebook.com/purpleleafltd" class="small text-decoration-none">Facebook</a></li>
+                  <li><a href="https://www.instagram.com/contactpurpleleaf/" class="small text-decoration-none">Instagram</a></li>
                 </ul>
               </div>
             </div>

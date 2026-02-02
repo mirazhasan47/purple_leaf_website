@@ -1847,7 +1847,7 @@
               <h5 class="fw-bold text-nowrap" style="text-align: left;font-size: clamp(21px, 2vw, 1.25rem);">Portfolio
               </h5>
               <ul class="list-unstyled mb-0">
-                <li><a data-target="" class="small text-decoration-none">Dribbble</a></li>
+                <li><a href="https://dribbble.com/Purple_Leaf" class="small text-decoration-none">Dribbble</a></li>
                 <li><a data-target="" class="small text-decoration-none">Behance</a></li>
               </ul>
             </div>
@@ -1856,9 +1856,9 @@
               <div style="min-width: fit-content;">
                 <h5 class="fw-bold text-nowrap" style="font-size: clamp(21px, 2vw, 1.25rem);">Social media</h5>
                 <ul class="list-unstyled mb-0">
-                  <li><a data-target="" class="small text-decoration-none">Linkedin</a></li>
-                  <li><a data-target="" class="small text-decoration-none">Facebook</a></li>
-                  <li><a data-target="" class="small text-decoration-none">Instagram</a></li>
+                  <li><a href="https://www.linkedin.com/company/purpleleaf1/" class="small text-decoration-none">Linkedin</a></li>
+                  <li><a href="https://www.facebook.com/purpleleafltd" class="small text-decoration-none">Facebook</a></li>
+                  <li><a href="https://www.instagram.com/contactpurpleleaf/" class="small text-decoration-none">Instagram</a></li>
                 </ul>
               </div>
             </div>

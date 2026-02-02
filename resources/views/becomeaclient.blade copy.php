@@ -132,24 +132,31 @@
       </div>
 
       <!-- Right: Links -->
-      <div class="col-lg-6 d-flex gap-5" style="margin-top: 55px;">
-        <div>
-          <h5 class="fw-bold">Portfolio</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">Dribbble</a></li>
-            <li><a href="#">Behance</a></li>
-            <li><a href="#">GitHub</a></li>
-          </ul>
+        <div class="col-lg-4" style="margin-top: 119px;">
+          <div class="row gx-0">
+
+            <div class="col-6">
+              <h5 class="fw-bold text-nowrap" style="text-align: left;font-size: clamp(21px, 2vw, 1.25rem);">Portfolio
+              </h5>
+              <ul class="list-unstyled mb-0">
+                <li><a href="https://dribbble.com/Purple_Leaf" class="small text-decoration-none">Dribbble</a></li>
+                <li><a data-target="" class="small text-decoration-none">Behance</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6 d-flex justify-content-end">
+              <div style="min-width: fit-content;">
+                <h5 class="fw-bold text-nowrap" style="font-size: clamp(21px, 2vw, 1.25rem);">Social media</h5>
+                <ul class="list-unstyled mb-0">
+                  <li><a href="https://www.linkedin.com/company/purpleleaf1/" class="small text-decoration-none">Linkedin</a></li>
+                  <li><a href="https://www.facebook.com/purpleleafltd" class="small text-decoration-none">Facebook</a></li>
+                  <li><a href="https://www.instagram.com/contactpurpleleaf/" class="small text-decoration-none">Instagram</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
         </div>
-        <div>
-          <h5 class="fw-bold">Social media</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">Linkedin</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-          </ul>
-        </div>
-      </div>
     </div>
   </div>
 </section>
