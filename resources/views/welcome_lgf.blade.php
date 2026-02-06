@@ -19,10 +19,12 @@
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-<style>
+  <style>
     /* Use a class to hide the entire container immediately */
-    .loading-state { opacity: 0; }
-</style>
+    .loading-state {
+      opacity: 0;
+    }
+  </style>
 </head>
 
 <body class="loading-state">
@@ -2055,20 +2057,29 @@
       }
     });
   </script>
-<script>
-        // REMOVE the document.addEventListener wrapper
-        const items = @json($items);
+  <script>
+    // REMOVE the document.addEventListener wrapper
+    const items = @json($items);
 
-        items.forEach(item => {
-            const el = document.getElementById(item.item_id);
-            if (el) {
-                el.innerText = item.text;
-            }
-        });
+    console.log(items); // Check the structure of the items array
 
-        // Immediately reveal
-        document.body.classList.remove('loading-state');
-    </script>
+    items.forEach(item => {
+      const el = document.getElementById(item.item_id);
+      if (item.type == 'Text') {
+        if (el) {
+          el.innerText = item.text;
+        }
+      }
+        else if (item.type == 'Image') {
+          if (el) {
+            el.src = item.text;
+          }
+        }                           
+    });
+
+    // Immediately reveal
+    document.body.classList.remove('loading-state');
+  </script>
 </body>
 
 </html>
