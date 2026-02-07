@@ -1204,7 +1204,7 @@
     <div class="container">
       <!-- Mobile Logo on the Left -->
       <a class="navbar-brand mobile-logo" href="#">
-        <img src="{{ asset('logo_lgf.png') }}" alt="Purple Leaf Logo" class="logo">
+        <img id="logo_image_two" src="{{ asset('logo_lgf.png') }}" alt="Purple Leaf Logo" class="logo">
       </a>
 
       <!-- Left: Profile Icon + Language Switch (visible on desktop) -->
@@ -1250,7 +1250,7 @@
           <!-- Centered Logo (Desktop) -->
           <li class="nav-item desktop-logo">
             <a class="navbar-brand" href="#">
-              <img src="{{ asset('logo_lgf.png') }}" alt="Purple Leaf Logo" class="logo">
+              <img id="logo_image_one" src="{{ asset('logo_lgf.png') }}" alt="Purple Leaf Logo" class="logo">
             </a>
           </li>
 
@@ -1275,18 +1275,18 @@
     <div class="container">
       <div class="content" style="margin-top: -10%;">
         <h4 id="hero_header">dummy text</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        <p id="hero_Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua...</p>
 
         <!-- Buttons -->
-        <a href="#" class="btn btn-primary-first">Know More</a>
-        <a href="#" class="btn btn-secondary">All Activities</a>
+        <a id="hero_Button_one" href="#" class="btn btn-primary-first">Know More</a>
+        <a id="hero_Button_two" href="#" class="btn btn-secondary">All Activities</a>
       </div>
     </div>
   </div>
 
   <div class="container donation-container">
-    <h2>Make Your Donation</h2>
+    <h2 id="donation_header">Make Your Donation</h2>
     <form>
       <div class="form-row">
         <div class="form-group">
@@ -1309,7 +1309,7 @@
         <div class="form-group"> <button type="submit" class="btn-donate">Donate</button></div>
       </div>
     </form>
-    <div class="note">
+    <div id="donation_note" class="note">
       You Will Receive Tax Relief When You Donate To As-Sunnah Foundation. <a href="#">Click Here To Learn More</a>
     </div>
   </div>
@@ -1322,16 +1322,16 @@
     <div class="row">
       <!-- 8 Column Layout with Image -->
       <div class="col-lg-7 image-column">
-        <img src="{{ asset('donation_image.png') }}" class="img-fluid" alt="Image" style="filter: none; width: 100%;">
+        <img id="donation_image_image" src="{{ asset('donation_image.png') }}" class="img-fluid" alt="Image" style="filter: none; width: 100%;">
       </div>
 
       <!-- 4 Column Layout with Content -->
       <div class="col-lg-5 content-column d-flex flex-column justify-content-center align-items-center text-center"
         style="background-color: #3F3F3FE5; color: white; padding: 2rem;">
         <div>
-          <h2>Donation to LGF</h2>
-          <p>Donations to Let's Go-on Foundation - LGF</p>
-          <a href="#" class="btn-donate" style="display: inline-block; padding: 0.7rem 1.8rem; background-color: #FE6F0F; color: white; 
+          <h2 id="donation_image_main">Donation to LGF</h2>
+          <p id="donation_image_sub">Donations to Let's Go-on Foundation - LGF</p>
+          <a id="donation_image_button" href="#" class="btn-donate" style="display: inline-block; padding: 0.7rem 1.8rem; background-color: #FE6F0F; color: white; 
                   font-weight: 600; font-size: 1rem; border-radius: 50px; text-decoration: none; 
                   transition: 0.3s;">
             Learn More
@@ -2061,20 +2061,22 @@
     // REMOVE the document.addEventListener wrapper
     const items = @json($items);
 
+
     console.log(items); // Check the structure of the items array
 
     items.forEach(item => {
+      debugger
       const el = document.getElementById(item.item_id);
-      if (item.type == 'Text') {
+      if (item.item_type == 'Text') {
         if (el) {
           el.innerText = item.text;
         }
       }
-        else if (item.type == 'Image') {
-          if (el) {
-            el.src = item.text;
-          }
-        }                           
+      else if (item.item_type == 'Image') {
+        if (el) {
+          el.src = item.item_image;
+        }
+      }
     });
 
     // Immediately reveal
