@@ -48,7 +48,7 @@ class LandingPageController extends Controller
         ];
 
         // 1. Card Images
-        if ($itemType === 'card' && $request->has('card_titles')) {
+        if ($itemType === 'Card' && $request->has('card_titles')) {
             $cards = [];
             $oldCards = $existingItem ? json_decode($existingItem->card_json, true) : [];
 

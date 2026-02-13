@@ -1526,6 +1526,32 @@
         width: 85% !important;
       }
     }
+
+    .d-flex strong,
+    .d-flex span {
+      margin: 0;
+    }
+
+    /* Default (Desktop) */
+    .project-info-row {
+      text-align: center;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .project-info-row {
+        text-align: left;
+      }
+
+      .project-info-row span {
+        font-size: 12px !important;
+      }
+
+      .project-title {
+        text-align: left;
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 
@@ -1625,36 +1651,41 @@
   </header>
 
   <!-- Project Info -->
-  <section class="container mobile-no-break py-5" style="width: 65%;">
-    <h3 class="mont_bold_seven" style="    text-align: center;
-    font-size: 20px;
-    margin-bottom: 42px;">Project Info</h3>
-    <div class="row text-center">
-      <!-- Project 1 -->
+
+
+  <section class="container py-5 project-info-section" style="max-width: 900px;">
+
+    <h3 class="text-center mont_bold_seven mb-5 project-title">
+      Project Info
+    </h3>
+
+    <div class="row project-info-row">
+
       <div class="col-md-4 mb-4">
-        <div class="d-flex justify-content-center gap-2">
-          <strong class="mont_bold_six_sixteen">Client:</strong>
+        <p class="mb-0">
+          <span class="mont_bold_six_sixteen">Client:</span>
           <span class="mont_regular_three_sixteen">Flexi Note</span>
-        </div>
+        </p>
       </div>
 
-      <!-- Project 2 -->
       <div class="col-md-4 mb-4">
-        <div class="d-flex justify-content-center gap-2">
-          <strong class="mont_bold_six_sixteen">Deliverables:</strong>
-          <span class="mont_regular_three_sixteen">Mobile App, Web App </span>
-        </div>
+        <p class="mb-0">
+          <span class="mont_bold_six_sixteen">Deliverables:</span>
+          <span class="mont_regular_three_sixteen">Mobile App, Web App</span>
+        </p>
       </div>
 
-      <!-- Project 3 -->
       <div class="col-md-4 mb-4">
-        <div class="d-flex justify-content-center gap-2">
-          <strong class="mont_bold_six_sixteen">Sector:</strong>
-          <span class="mont_regular_three_sixteen">Android, iOS
-            MacOS, Windows</span>
-        </div>
+        <p class="mb-0">
+          <span class="mont_bold_six_sixteen">Sector:</span>
+          <span class="mont_regular_three_sixteen">
+            Android, iOS, MacOS, Windows
+          </span>
+        </p>
       </div>
+
     </div>
+
   </section>
 
   <!-- Problem and Goals -->
@@ -1967,9 +1998,12 @@
               <div style="min-width: fit-content;">
                 <h5 class="fw-bold text-nowrap" style="font-size: clamp(21px, 2vw, 1.25rem);">Social media</h5>
                 <ul class="list-unstyled mb-0">
-                  <li><a href="https://www.linkedin.com/company/purpleleaf1/" class="small text-decoration-none">Linkedin</a></li>
-                  <li><a href="https://www.facebook.com/purpleleafltd" class="small text-decoration-none">Facebook</a></li>
-                  <li><a href="https://www.instagram.com/contactpurpleleaf/" class="small text-decoration-none">Instagram</a></li>
+                  <li><a href="https://www.linkedin.com/company/purpleleaf1/"
+                      class="small text-decoration-none">Linkedin</a></li>
+                  <li><a href="https://www.facebook.com/purpleleafltd" class="small text-decoration-none">Facebook</a>
+                  </li>
+                  <li><a href="https://www.instagram.com/contactpurpleleaf/"
+                      class="small text-decoration-none">Instagram</a></li>
                 </ul>
               </div>
             </div>

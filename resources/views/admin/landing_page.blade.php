@@ -145,7 +145,7 @@
                 $('#text').val(item.text);
                 $('#card_repeater_container').empty();
 
-                if (item.item_type === 'card') {
+                if (item.item_type === 'Card') {
                     $('#card_section_wrapper').show();
                     let cardData = item.card_json ? (typeof item.card_json === 'string' ? JSON.parse(item.card_json) : item.card_json) : [];
                     if (Array.isArray(cardData)) {

@@ -1635,36 +1635,40 @@
     </header>
 
     <!-- Project Info -->
-    <section class="container mobile-no-break py-5" style="width: 65%;">
-        <h3 class="mont_bold_seven" style="    text-align: center;
-    font-size: 20px;
-    margin-bottom: 42px;">Project Info</h3>
-        <div class="row text-center">
-            <!-- Project 1 -->
-            <div class="col-md-4 mb-4">
-                <div class="d-flex justify-content-center gap-2">
-                    <strong class="mont_bold_six_sixteen">Client:</strong>
-                    <span class="mont_regular_three_sixteen">Karighor</span>
-                </div>
-            </div>
+  <section class="container py-5 project-info-section" style="max-width: 900px;">
 
-            <!-- Project 2 -->
-            <div class="col-md-4 mb-4">
-                <div class="d-flex justify-content-center gap-2">
-                    <strong class="mont_bold_six_sixteen">Deliverables:</strong>
-                    <span class="mont_regular_three_sixteen">Website, Mobile App</span>
-                </div>
-            </div>
+    <h3 class="text-center mont_bold_seven mb-5 project-title">
+      Project Info
+    </h3>
 
-            <!-- Project 3 -->
-            <div class="col-md-4 mb-4">
-                <div class="d-flex justify-content-center gap-2">
-                    <strong class="mont_bold_six_sixteen">Sector:</strong>
-                    <span class="mont_regular_three_sixteen">Creative Industry</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="row project-info-row">
+
+      <div class="col-md-4 mb-4">
+        <p class="mb-0">
+          <span class="mont_bold_six_sixteen">Client:</span>
+          <span class="mont_regular_three_sixteen">Flexi Note</span>
+        </p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <p class="mb-0">
+          <span class="mont_bold_six_sixteen">Deliverables:</span>
+          <span class="mont_regular_three_sixteen">Mobile App, Web App</span>
+        </p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <p class="mb-0">
+          <span class="mont_bold_six_sixteen">Sector:</span>
+          <span class="mont_regular_three_sixteen">
+            Android, iOS, MacOS, Windows
+          </span>
+        </p>
+      </div>
+
+    </div>
+
+  </section>
 
 
 

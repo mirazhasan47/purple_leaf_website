@@ -1637,35 +1637,39 @@
   </header>
 
   <!-- Project Info -->
-  <section class="container mobile-no-break py-5" style="width: 65%;">
-    <h3 class="mont_bold_seven" style="    text-align: center;
-    font-size: 20px;
-    margin-bottom: 42px;">Project Info</h3>
-    <div class="row text-center">
-      <!-- Project 1 -->
+  <section class="container py-5 project-info-section" style="max-width: 900px;">
+
+    <h3 class="text-center mont_bold_seven mb-5 project-title">
+      Project Info
+    </h3>
+
+    <div class="row project-info-row">
+
       <div class="col-md-4 mb-4">
-        <div class="d-flex justify-content-center gap-2">
-          <strong class="mont_bold_six_sixteen">Client:</strong>
-          <span class="mont_regular_three_sixteen">GIM-Digital Truck</span>
-        </div>
+        <p class="mb-0">
+          <span class="mont_bold_six_sixteen">Client:</span>
+          <span class="mont_regular_three_sixteen">GIM Digital Truck</span>
+        </p>
       </div>
 
-      <!-- Project 2 -->
       <div class="col-md-4 mb-4">
-        <div class="d-flex justify-content-center gap-2">
-          <strong class="mont_bold_six_sixteen">Deliverables:</strong>
-          <span class="mont_regular_three_sixteen">Mobile Application</span>
-        </div>
+        <p class="mb-0">
+          <span class="mont_bold_six_sixteen">Deliverables:</span>
+          <span class="mont_regular_three_sixteen">Mobile App, Web App</span>
+        </p>
       </div>
 
-      <!-- Project 3 -->
       <div class="col-md-4 mb-4">
-        <div class="d-flex justify-content-center gap-2">
-          <strong class="mont_bold_six_sixteen">Sector:</strong>
-          <span class="mont_regular_three_sixteen">Logistics</span>
-        </div>
+        <p class="mb-0">
+          <span class="mont_bold_six_sixteen">Sector:</span>
+          <span class="mont_regular_three_sixteen">
+            Android, iOS, MacOS, Windows
+          </span>
+        </p>
       </div>
+
     </div>
+
   </section>
 
   <!-- Problem and Goals -->
