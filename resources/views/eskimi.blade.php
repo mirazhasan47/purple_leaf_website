@@ -1537,6 +1537,28 @@
         width: 85% !important;
       }
     }
+
+
+    /* Default (Desktop) */
+    .project-info-row {
+      text-align: center;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .project-info-row {
+        text-align: left;
+      }
+
+      .project-info-row span {
+        font-size: 12px !important;
+      }
+
+      .project-title {
+        text-align: left;
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 
@@ -1646,14 +1668,14 @@
       <div class="col-md-4 mb-4">
         <p class="mb-0">
           <span class="mont_bold_six_sixteen">Client:</span>
-          <span class="mont_regular_three_sixteen">Flexi Note</span>
+          <span class="mont_regular_three_sixteen">Eskimi</span>
         </p>
       </div>
 
       <div class="col-md-4 mb-4">
         <p class="mb-0">
           <span class="mont_bold_six_sixteen">Deliverables:</span>
-          <span class="mont_regular_three_sixteen">Mobile App, Web App</span>
+          <span class="mont_regular_three_sixteen">Web Application</span>
         </p>
       </div>
 
@@ -1661,7 +1683,7 @@
         <p class="mb-0">
           <span class="mont_bold_six_sixteen">Sector:</span>
           <span class="mont_regular_three_sixteen">
-            Android, iOS, MacOS, Windows
+            Edtech
           </span>
         </p>
       </div>
@@ -1929,9 +1951,12 @@
               <div style="min-width: fit-content;">
                 <h5 class="fw-bold text-nowrap" style="font-size: clamp(21px, 2vw, 1.25rem);">Social media</h5>
                 <ul class="list-unstyled mb-0">
-                  <li><a href="https://www.linkedin.com/company/purpleleaf1/" class="small text-decoration-none">Linkedin</a></li>
-                  <li><a href="https://www.facebook.com/purpleleafltd" class="small text-decoration-none">Facebook</a></li>
-                  <li><a href="https://www.instagram.com/contactpurpleleaf/" class="small text-decoration-none">Instagram</a></li>
+                  <li><a href="https://www.linkedin.com/company/purpleleaf1/"
+                      class="small text-decoration-none">Linkedin</a></li>
+                  <li><a href="https://www.facebook.com/purpleleafltd" class="small text-decoration-none">Facebook</a>
+                  </li>
+                  <li><a href="https://www.instagram.com/contactpurpleleaf/"
+                      class="small text-decoration-none">Instagram</a></li>
                 </ul>
               </div>
             </div>

@@ -1468,75 +1468,96 @@
         }
 
 
-            @media (max-width: 768px) {
-      .headerr {
-        background: url('{{ asset('flexinote_mb.png') }}') no-repeat center center;
-        background-size: cover;
-        height: auto;
-        /* optional, usually better for mobile */
-        height: 210px;
-        margin-top: 50px;
-      }
-    }
+        @media (max-width: 768px) {
+            .headerr {
+                background: url('{{ asset('flexinote_mb.png') }}') no-repeat center center;
+                background-size: cover;
+                height: auto;
+                /* optional, usually better for mobile */
+                height: 210px;
+                margin-top: 50px;
+            }
+        }
 
 
 
-    @media (max-width: 767px) {
+        @media (max-width: 767px) {
 
-      .mobile-no-break,
-      .mobile-no-break * {
-        text-align: left !important;
-        font-size: 12px !important;
+            .mobile-no-break,
+            .mobile-no-break * {
+                text-align: left !important;
+                font-size: 12px !important;
 
-        /* 🚫 prevent line breaks */
-        white-space: nowrap;
-        word-break: keep-all;
-        overflow-wrap: normal;
-      }
+                /* 🚫 prevent line breaks */
+                white-space: nowrap;
+                word-break: keep-all;
+                overflow-wrap: normal;
+            }
 
-      /* override Bootstrap centering */
-      .mobile-no-break .d-flex.justify-content-center {
-        justify-content: flex-start !important;
-      }
-    }
+            /* override Bootstrap centering */
+            .mobile-no-break .d-flex.justify-content-center {
+                justify-content: flex-start !important;
+            }
+        }
 
-    .mobile-no-break {
-      overflow-x: hidden;
-    }
+        .mobile-no-break {
+            overflow-x: hidden;
+        }
 
-    /* Target devices with width 768px or smaller (Tablets and Mobiles) */
-    @media (max-width: 768px) {
+        /* Target devices with width 768px or smaller (Tablets and Mobiles) */
+        @media (max-width: 768px) {
 
-      /* Target sections and headers using their class names or tags */
-      section.container,
-      section.info,
-      section.interview-results,
-      section.personas,
-      section.design-solution,
-      .container.widthControl,
-      .headerr .container {
-        width: 85% !important;
-        max-width: 85% !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-      }
+            /* Target sections and headers using their class names or tags */
+            section.container,
+            section.info,
+            section.interview-results,
+            section.personas,
+            section.design-solution,
+            .container.widthControl,
+            .headerr .container {
+                width: 85% !important;
+                max-width: 85% !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
 
-      /* Fix for the Design Solution images to ensure they stay responsive */
-      .design-solution {
-        width: 85% !important;
-      }
+            /* Fix for the Design Solution images to ensure they stay responsive */
+            .design-solution {
+                width: 85% !important;
+            }
 
-      /* Optional: Ensure text alignment looks good on mobile */
-      .column.text-left {
-        text-align: center !important;
-      }
+            /* Optional: Ensure text alignment looks good on mobile */
+            .column.text-left {
+                text-align: center !important;
+            }
 
-      /* Ensure the left/right columns in header stack or resize */
-      .heroo {
-        flex-direction: column;
-        width: 85% !important;
-      }
-    }
+            /* Ensure the left/right columns in header stack or resize */
+            .heroo {
+                flex-direction: column;
+                width: 85% !important;
+            }
+        }
+
+        /* Default (Desktop) */
+        .project-info-row {
+            text-align: center;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .project-info-row {
+                text-align: left;
+            }
+
+            .project-info-row span {
+                font-size: 12px !important;
+            }
+
+            .project-title {
+                text-align: left;
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 
@@ -1635,40 +1656,40 @@
     </header>
 
     <!-- Project Info -->
-  <section class="container py-5 project-info-section" style="max-width: 900px;">
+    <section class="container py-5 project-info-section" style="max-width: 900px;">
 
-    <h3 class="text-center mont_bold_seven mb-5 project-title">
-      Project Info
-    </h3>
+        <h3 class="text-center mont_bold_seven mb-5 project-title">
+            Project Info
+        </h3>
 
-    <div class="row project-info-row">
+        <div class="row project-info-row">
 
-      <div class="col-md-4 mb-4">
-        <p class="mb-0">
-          <span class="mont_bold_six_sixteen">Client:</span>
-          <span class="mont_regular_three_sixteen">Flexi Note</span>
-        </p>
-      </div>
+            <div class="col-md-4 mb-4">
+                <p class="mb-0">
+                    <span class="mont_bold_six_sixteen">Client:</span>
+                    <span class="mont_regular_three_sixteen">DotOnline</span>
+                </p>
+            </div>
 
-      <div class="col-md-4 mb-4">
-        <p class="mb-0">
-          <span class="mont_bold_six_sixteen">Deliverables:</span>
-          <span class="mont_regular_three_sixteen">Mobile App, Web App</span>
-        </p>
-      </div>
+            <div class="col-md-4 mb-4">
+                <p class="mb-0">
+                    <span class="mont_bold_six_sixteen">Deliverables:</span>
+                    <span class="mont_regular_three_sixteen">Web Application</span>
+                </p>
+            </div>
 
-      <div class="col-md-4 mb-4">
-        <p class="mb-0">
-          <span class="mont_bold_six_sixteen">Sector:</span>
-          <span class="mont_regular_three_sixteen">
-            Android, iOS, MacOS, Windows
-          </span>
-        </p>
-      </div>
+            <div class="col-md-4 mb-4">
+                <p class="mb-0">
+                    <span class="mont_bold_six_sixteen">Sector:</span>
+                    <span class="mont_regular_three_sixteen">
+                        2 months
+                    </span>
+                </p>
+            </div>
 
-    </div>
+        </div>
 
-  </section>
+    </section>
 
 
 
@@ -1995,31 +2016,37 @@
                 </div>
 
                 <!-- Right: Links -->
-        <div class="col-lg-4" style="margin-top: 119px;">
-          <div class="row gx-0">
+                <div class="col-lg-4" style="margin-top: 119px;">
+                    <div class="row gx-0">
 
-            <div class="col-6">
-              <h5 class="fw-bold text-nowrap" style="text-align: left;font-size: clamp(21px, 2vw, 1.25rem);">Portfolio
-              </h5>
-              <ul class="list-unstyled mb-0">
-                <li><a href="https://dribbble.com/Purple_Leaf" class="small text-decoration-none">Dribbble</a></li>
-                <li><a data-target="" class="small text-decoration-none">Behance</a></li>
-              </ul>
-            </div>
+                        <div class="col-6">
+                            <h5 class="fw-bold text-nowrap"
+                                style="text-align: left;font-size: clamp(21px, 2vw, 1.25rem);">Portfolio
+                            </h5>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="https://dribbble.com/Purple_Leaf"
+                                        class="small text-decoration-none">Dribbble</a></li>
+                                <li><a data-target="" class="small text-decoration-none">Behance</a></li>
+                            </ul>
+                        </div>
 
-            <div class="col-6 d-flex justify-content-end">
-              <div style="min-width: fit-content;">
-                <h5 class="fw-bold text-nowrap" style="font-size: clamp(21px, 2vw, 1.25rem);">Social media</h5>
-                <ul class="list-unstyled mb-0">
-                  <li><a href="https://www.linkedin.com/company/purpleleaf1/" class="small text-decoration-none">Linkedin</a></li>
-                  <li><a href="https://www.facebook.com/purpleleafltd" class="small text-decoration-none">Facebook</a></li>
-                  <li><a href="https://www.instagram.com/contactpurpleleaf/" class="small text-decoration-none">Instagram</a></li>
-                </ul>
-              </div>
-            </div>
+                        <div class="col-6 d-flex justify-content-end">
+                            <div style="min-width: fit-content;">
+                                <h5 class="fw-bold text-nowrap" style="font-size: clamp(21px, 2vw, 1.25rem);">Social
+                                    media</h5>
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="https://www.linkedin.com/company/purpleleaf1/"
+                                            class="small text-decoration-none">Linkedin</a></li>
+                                    <li><a href="https://www.facebook.com/purpleleafltd"
+                                            class="small text-decoration-none">Facebook</a></li>
+                                    <li><a href="https://www.instagram.com/contactpurpleleaf/"
+                                            class="small text-decoration-none">Instagram</a></li>
+                                </ul>
+                            </div>
+                        </div>
 
-          </div>
-        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
