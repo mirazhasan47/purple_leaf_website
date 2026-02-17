@@ -78,7 +78,7 @@
 
     .info {
       background: #f9f9f9;
-      padding: 40px 20px;
+      padding: 30px 20px;
       text-align: center;
     }
 
@@ -1551,6 +1551,10 @@
         text-align: left;
         font-size: 16px;
       }
+    }
+
+    .project-info-section {
+      margin-top: 100px !important;
     }
   </style>
 </head>

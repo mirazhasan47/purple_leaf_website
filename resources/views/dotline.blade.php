@@ -78,7 +78,7 @@
 
         .info {
             background: #f9f9f9;
-            padding: 40px 20px;
+            padding: 30px 20px;
             text-align: center;
         }
 

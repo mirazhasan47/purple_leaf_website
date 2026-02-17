@@ -78,7 +78,7 @@
 
     .info {
       background: #f9f9f9;
-      padding: 40px 20px;
+      padding: 30px 20px;
       text-align: center;
     }
 
@@ -1551,6 +1551,7 @@
         font-size: 16px;
       }
     }
+
   </style>
 </head>
 
@@ -1650,7 +1651,7 @@
   </header>
 
   <!-- Project Info -->
-  <section class="container py-5 project-info-section" style="max-width: 900px;">
+  <section class="container py-5 project-info-section height_five_hundred" style="max-width: 900px;">
 
     <h3 class="text-center mont_bold_seven mb-5 project-title">
       Project Info
@@ -1686,7 +1687,7 @@
   </section>
 
   <!-- Problem and Goals -->
-  <section class="info" style="    width: 85%;
+  <section class="info height_five_hundred" style="    width: 85%;
     margin: 0 auto;">
     <div class="columns">
       <div class="column text-left">
