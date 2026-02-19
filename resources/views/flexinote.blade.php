@@ -1556,6 +1556,17 @@
     .project-info-section {
       margin-top: 100px !important;
     }
+
+    .mobile-only-navbar {
+      display: none;
+    }
+
+    /* Show only on mobile screens */
+    @media (max-width: 991.98px) {
+      .mobile-only-navbar {
+        display: block;
+      }
+    }
   </style>
 </head>
 
@@ -1581,7 +1592,7 @@
 
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top mobile_only navbar">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="{{ asset('LogoOne.png') }}" alt="Purple Leaf Logo" style="max-width: 152px;">
