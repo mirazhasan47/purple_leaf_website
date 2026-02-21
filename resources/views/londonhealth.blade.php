@@ -87,8 +87,8 @@
       flex-wrap: wrap;
       gap: 40px;
       justify-content: center;
-      margin-top: 90px;
-      margin-bottom: 90px;
+      margin-top: 70px;
+      margin-bottom: 70px;
     }
 
     .column {
@@ -1809,10 +1809,10 @@
 
           // 3. Auto-Play Logic (1 Second)
           function startTimer() {
-            autoSlide = setInterval(function () {
-              currentIndex = (currentIndex + 1) % total; // Loops back to 0
-              updateSlider();
-            }, 1000); // 1000ms = 1 second
+            // autoSlide = setInterval(function () {
+            //   currentIndex = (currentIndex + 1) % total; // Loops back to 0
+            //   updateSlider();
+            // }, 1000); // 1000ms = 1 second
           }
 
           function resetTimer() {
