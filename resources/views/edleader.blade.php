@@ -1196,6 +1196,21 @@
       .nav-overlay {
         display: none !important;
       }
+
+      .project-title {
+        margin-top: 138px;
+      }
+
+      .project-info-row {
+        width: 870px;
+        margin: 0 auto;
+      }
+      .project-info-section {
+        margin-bottom: 170px;
+      }
+      .info {
+        background-color: #F2F2F2;
+      }
     }
 
 
@@ -1281,27 +1296,6 @@
     .header-dark {
       background-color: #000000 !important;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     /* Force the list to wrap and behave like a grid */
@@ -1686,7 +1680,8 @@
   </section>
 
   <!-- Problem and Goals -->
-  <section class="info" style="    width: 85%;
+  <section class="info">
+    <div style="    width: 85%;
     margin: 0 auto;">
     <div class="columns">
       <div class="column text-left">
@@ -1705,6 +1700,7 @@
           <li>Build a community of school systems that can grow together.</li>
         </ol>
       </div>
+    </div>
     </div>
   </section>
 
