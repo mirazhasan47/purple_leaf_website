@@ -1205,11 +1205,19 @@
         width: 870px;
         margin: 0 auto;
       }
+
       .project-info-section {
         margin-bottom: 170px;
       }
+
       .info {
-        background-color: #F2F2F2;
+        background: #f9f9f9;
+        padding: 0px 0px;
+        text-align: center;
+      }
+
+      .desisol {
+        margin-bottom: 95px;
       }
     }
 
@@ -1683,28 +1691,29 @@
   <section class="info">
     <div style="    width: 85%;
     margin: 0 auto;">
-    <div class="columns">
-      <div class="column text-left">
-        <h3 class="mont_bold_six_twenty_four">The Problem</h3>
-        <p class="karla_regular_three_sixteen">Users were overwhelmed by the scattered content & needed a more seamless
-          and centralized tool for networking
-          and leadership growth among educators.</p>
+      <div class="columns problem_margin">
+        <div class="column text-left">
+          <h3 class="mont_bold_six_twenty_four">The Problem</h3>
+          <p class="karla_regular_three_sixteen">Users were overwhelmed by the scattered content & needed a more
+            seamless
+            and centralized tool for networking
+            and leadership growth among educators.</p>
+        </div>
+        <div class="column text-left">
+          <h3 class="mont_bold_six_twenty_four">Goals</h3>
+          <p class="karla_regular_three_sixteen">To foster 21st-century deeper learning, our goals were to-</p>
+          <ol class="karla_regular_three_sixteen">
+            <li>Connect colleagues across the nation.</li>
+            <li>Keep educators up to date about upcoming events.</li>
+            <li>Ensure access to contacts of educators and leaders.</li>
+            <li>Build a community of school systems that can grow together.</li>
+          </ol>
+        </div>
       </div>
-      <div class="column text-left">
-        <h3 class="mont_bold_six_twenty_four">Goals</h3>
-        <p class="karla_regular_three_sixteen">To foster 21st-century deeper learning, our goals were to-</p>
-        <ol class="karla_regular_three_sixteen">
-          <li>Connect colleagues across the nation.</li>
-          <li>Keep educators up to date about upcoming events.</li>
-          <li>Ensure access to contacts of educators and leaders.</li>
-          <li>Build a community of school systems that can grow together.</li>
-        </ol>
-      </div>
-    </div>
     </div>
   </section>
 
-  <section class="info" style="    width: 85%;
+  <section class="" style="    width: 85%;
     margin: 0 auto;">
     <div class="columns">
       <div class="column text-left">
@@ -1763,7 +1772,7 @@
   </section>
 
   <!-- Design Solution -->
-  <h4 class="text-center mont_bold_seven_eightteen">🧩 Design Solution</h4>
+  <h4 class="text-center mont_bold_seven_eightteen desisol">🧩 Design Solution</h4>
   <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
     <div class="center" style="overflow: hidden;">
       <div class="image-block" style="display: flex; width: 100%;">
@@ -1854,7 +1863,7 @@
   <section class="contact-section py-5">
     <div class="container widthControl" style="    margin-top: 120px;
     margin-bottom: 120px;
-    width: 62%;
+    width: 52%;
     /* margin: auto; */">
       <div class="row align-items-start">
         <!-- Left: Contact Info -->
