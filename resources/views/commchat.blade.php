@@ -77,7 +77,6 @@
     }
 
     .info {
-      background: #f9f9f9;
       padding: 30px 20px;
       text-align: center;
     }
@@ -114,7 +113,7 @@
     }
 
     .image-block img {
-      max-width: 90%;
+      width: 100%;
       margin: 10px auto;
       display: block;
     }
@@ -188,8 +187,7 @@
     .personas,
     .journey-map,
     .design-solution {
-      background-color: #eef6fb;
-      padding: 40px 20px;
+      padding: 0px 0px;
     }
 
     header .left-column {
@@ -1196,6 +1194,33 @@
       .nav-overlay {
         display: none !important;
       }
+
+      .project-info-section {
+        margin-bottom: 170px;
+      }
+
+      .addPaddingProblem {
+        padding: 190px 0px;
+      }
+
+      .project-info-row {
+        width: 870px;
+        margin: 0 auto;
+      }
+
+      .addPaddingUser {
+        padding: 100px 0px;
+      }
+
+
+      .project-title {
+        margin-top: 138px;
+      }
+
+      .info {
+        padding: 0px 0px;
+        text-align: center;
+      }
     }
 
 
@@ -1696,9 +1721,9 @@
   </section>
 
   <!-- Problem and Goals -->
-  <section class="info" style="    width: 85%;
+  <section class="addPaddingProblem" style="background: #F2F2F2;">
+    <div class="columns info" style="width: 60%;
     margin: 0 auto;">
-    <div class="columns">
       <div class="column text-left">
         <h3 class="mont_bold_six_twenty_four">The Problem</h3>
         <p class="karla_regular_three_sixteen">Millions of people are concerned about the risk of their personal
@@ -1715,7 +1740,7 @@
     </div>
   </section>
 
-  <section class="info" style="    width: 85%;
+  <section class="addPaddingUser" style="    width: 60%;
     margin: 0 auto;">
     <div class="columns">
       <div class="column text-left">
@@ -1736,26 +1761,26 @@
   </section>
 
   <h4 class="text-center mont_bold_seven_sixteen">1. QUESTIONNAIRE</h4>
-  <section class="interview-results" style="width: 50%;
+  <section class="interview-results" style="width: 60%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;">
     <div class="center">
       <div class="image-block">
-        <img src="{{ asset('ecommfirstBig.png') }}" alt="Survey Results" class="img-fluid" />
+        <img src="{{ asset('ecommfirstBig.png') }}" alt="Survey Results" class="" />
       </div>
     </div>
   </section>
 
   <!-- User Personas -->
   <h4 class="text-center mont_bold_seven_sixteen">2. User Testing</h4>
-  <section class="personas" style="width: 50%;
+  <section class="personas" style="width: 60%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;">
     <div class="center">
       <div class="image-block">
-        <img src="{{ asset('user_testing.png') }}" alt="User Persona" class="img-fluid" />
+        <img src="{{ asset('user_testing.png') }}" alt="User Persona" class="" />
       </div>
     </div>
   </section>
@@ -1774,7 +1799,7 @@
     </span>
 
   </p>
-  <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
+  <section class="design-solution" style="width: 60%; margin: 0 auto; margin-bottom: 50px;">
     <div class="center" style="overflow: hidden;">
       <div class="image-block" style="display: flex; width: 100%;">
         <img src="{{ asset('commchat_1_1.png') }}" style="min-width: 100%; transition: transform 0.5s ease;">
@@ -1800,7 +1825,7 @@
     </span>
 
   </p>
-  <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
+  <section class="design-solution" style="width: 60%; margin: 0 auto; margin-bottom: 50px;">
     <div class="center" style="overflow: hidden;">
       <div class="image-block" style="display: flex; width: 100%;">
         <img src="{{ asset('commchat_2_1.png') }}" style="min-width: 100%; transition: transform 0.5s ease;">
@@ -1873,7 +1898,7 @@
   </script>
 
   <!-- Key Takeaways -->
-  <section class="info center" style="width: 50%;
+  <section class="info center" style="width: 60%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 50px;
@@ -1886,12 +1911,12 @@
     </p>
   </section>
 
-  <section class="info center" style="width: 50%;
+  <section class="info center" style="width: 60%;
     margin: 0 auto;
     margin-top: 0px;
     margin-bottom: 100px;
     background: none;">
-    <h4 class="mont_bold_seven_sixteen" style="margin-bottom: 14%;">Conclusion</h4>
+    <h4 class="mont_bold_seven_sixteen" style="margin-bottom: 14%;margin-top: 100px;">Conclusion</h4>
     <p class="karla_regular_three_eighteen" style="text-align: left;">The Commchat messaging app provides a seamless
       communication experience for users in the virtual world. Its minimalist design and support for text and multimedia
       messages make it easy for users to connect and communicate with others in real life and also in the metaverse.

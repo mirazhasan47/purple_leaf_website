@@ -1196,6 +1196,39 @@
       .nav-overlay {
         display: none !important;
       }
+
+      .challengeStyle {
+        padding-top: 160px!important;
+        padding-bottom: 160px!important;
+      }
+
+       .userStyle {
+        padding-top: 80px!important;
+        padding-bottom: 80px!important;
+      }
+
+      .project-title {
+        margin-top: 100px;
+      }
+
+      .project-info-row {
+        width: 870px;
+        margin: 0 auto;
+      }
+
+      .project-info-section {
+        margin-bottom: 170px;
+      }
+
+      .info {
+        background: #f9f9f9;
+        padding: 0px 0px;
+        text-align: center;
+      }
+
+      .desisol {
+        margin-bottom: 95px;
+      }
     }
 
 
@@ -1694,9 +1727,9 @@
   </section>
 
   <!-- Problem and Goals -->
-  <section class="info" style="    width: 85%;
+  <section class="info" style="background: #F2F2F2;">
+    <div class="columns challengeStyle" style="    width: 85%;
     margin: 0 auto;">
-    <div class="columns">
       <div class="column text-left">
         <h3 class="mont_bold_six_twenty_four">Challenge</h3>
         <p class="karla_regular_three_sixteen">The demand and supply for truck-based logistics in Bangladesh do not
@@ -1716,7 +1749,7 @@
     </div>
   </section>
 
-  <section class="info" style="    width: 85%;
+  <section class="info userStyle" style="    width: 85%;
     margin: 0 auto;">
     <div class="columns">
       <div class="column text-left">
@@ -1800,7 +1833,7 @@
   </section>
 
   <!-- Design Solution -->
-  <h4 class="text-center mont_bold_seven_eightteen">🧩 Design Solution</h4>
+  <h4 class="text-center mont_bold_seven_eightteen" style="margin-bottom: 80px;">🧩 Design Solution</h4>
   <p class="text-center karla_regular_four_sixteen"
     style="width:50%; margin:0 auto; text-align:left!important; display:flex; align-items:center;">
 

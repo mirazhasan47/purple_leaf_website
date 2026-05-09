@@ -1689,7 +1689,7 @@
 
   <!-- Problem and Goals -->
   <section class="info">
-    <div style="    width: 85%;
+    <div style="    width: 60%;
     margin: 0 auto;">
       <div class="columns problem_margin">
         <div class="column text-left">
@@ -1713,7 +1713,7 @@
     </div>
   </section>
 
-  <section class="" style="    width: 85%;
+  <section class="" style="    width: 60%;
     margin: 0 auto;">
     <div class="columns">
       <div class="column text-left">
@@ -1734,7 +1734,7 @@
   </section>
 
   <h4 class="text-center mont_bold_seven_sixteen">1. Interview Results</h4>
-  <section class="interview-results" style="width: 50%;
+  <section class="interview-results" style="width: 60%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;">
@@ -1747,7 +1747,7 @@
 
   <!-- User Personas -->
   <h4 class="text-center mont_bold_seven_sixteen">2. User Personas</h4>
-  <section class="personas" style="width: 50%;
+  <section class="personas" style="width: 60%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;">
@@ -1760,7 +1760,7 @@
 
   <!-- Journey Map -->
   <h4 class="text-center mont_bold_seven_sixteen">3. Journey Map</h4>
-  <section class="journey-map" style="width: 50%;
+  <section class="journey-map" style="width: 60%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;">
@@ -1773,7 +1773,7 @@
 
   <!-- Design Solution -->
   <h4 class="text-center mont_bold_seven_eightteen desisol">🧩 Design Solution</h4>
-  <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
+  <section class="design-solution" style="width: 60%; margin: 0 auto; margin-bottom: 50px;">
     <div class="center" style="overflow: hidden;">
       <div class="image-block" style="display: flex; width: 100%;">
         <img src="{{ asset('edleader_1_1.png') }}" style="min-width: 100%; transition: transform 0.5s ease;">
@@ -1847,7 +1847,7 @@
 
 
   <!-- Key Takeaways -->
-  <section class="info center" style="width: 50%;
+  <section class="info center" style="width: 60%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -1860,56 +1860,75 @@
   </section>
 
   <!-- Footer -->
-  <section class="contact-section py-5">
-    <div class="container widthControl" style="    margin-top: 120px;
-    margin-bottom: 120px;
-    width: 52%;
-    /* margin: auto; */">
-      <div class="row align-items-start">
-        <!-- Left: Contact Info -->
-        <div class="col-lg-8 mb-4">
-          <h2 class="fw-bold gradient-text mb-3" style="text-align: left;">Get<br>in touch</h2>
-          <p style="text-align: left;"><a href="mailto:contactpurpleleaf@gmail.com" class="email-link"
-              style="text-align: left;">contactpurpleleaf@gmail.com</a></p>
-          <p style="text-align: left;">
-            <img src="https://img.icons8.com/color/24/000000/whatsapp--v1.png" alt="WhatsApp icon" />
-            +880123456789
+<section class="contact-section py-5">
+  <!-- Centered container locked to 52% width -->
+  <div class="container contact-container mx-auto" style="width: 62%; min-width: 320px;">
+    <div class="row gy-5 align-items-start">
+
+      <!-- Left: Contact Info -->
+      <div class="col-lg-7">
+        <div class="contact-info">
+          <h2 class="fw-bold gradient-text mb-4">
+            Get <br> in touch
+          </h2>
+
+          <p class="mb-3 text-left">
+            <a href="mailto:contactpurpleleaf@gmail.com" class="email-link text-decoration-none">
+              contactpurpleleaf@gmail.com
+            </a>
+          </p>
+
+          <p class="d-flex align-items-center gap-2 mb-0">
+            <img 
+              src="https://img.icons8.com/color/24/000000/whatsapp--v1.png"
+              alt="WhatsApp icon"
+              width="22"
+              height="22"
+            />
+            <span>+880123456789</span>
           </p>
         </div>
-
-        <!-- Right: Links -->
-        <div class="col-lg-4" style="margin-top: 119px;">
-          <div class="row gx-0">
-
-            <div class="col-6">
-              <h5 class="fw-bold text-nowrap" style="text-align: left;font-size: clamp(21px, 2vw, 1.25rem);">Portfolio
-              </h5>
-              <ul class="list-unstyled mb-0">
-                <li><a href="https://dribbble.com/Purple_Leaf" class="small text-decoration-none">Dribbble</a></li>
-                <li><a data-target="" class="small text-decoration-none">Behance</a></li>
-              </ul>
-            </div>
-
-            <div class="col-6 d-flex justify-content-end">
-              <div style="min-width: fit-content;">
-                <h5 class="fw-bold text-nowrap" style="font-size: clamp(21px, 2vw, 1.25rem);">Social media</h5>
-                <ul class="list-unstyled mb-0">
-                  <li><a href="https://www.linkedin.com/company/purpleleaf1/"
-                      class="small text-decoration-none">Linkedin</a></li>
-                  <li><a href="https://www.facebook.com/purpleleafltd" class="small text-decoration-none">Facebook</a>
-                  </li>
-                  <li><a href="https://www.instagram.com/contactpurpleleaf/"
-                      class="small text-decoration-none">Instagram</a></li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
       </div>
+
+      <!-- Right: Links -->
+      <div class="col-lg-5">
+        <div class="row gx-0 gy-4 mt-5">
+
+          <!-- Portfolio Column -->
+          <div class="col-6">
+            <h5 class="fw-bold section-title mb-3 text-left">Portfolio</h5>
+            <ul class="list-unstyled mb-0 contact-links">
+              <li class="mb-2">
+                <a href="https://dribbble.com/Purple_Leaf" class="text-decoration-none">Dribbble</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none">Behance</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media Column -->
+          <div class="col-6">
+            <h5 class="fw-bold section-title mb-3 text-left">Social media</h5>
+            <ul class="list-unstyled mb-0 contact-links">
+              <li class="mb-2">
+                <a href="https://www.linkedin.com/company/purpleleaf1/" class="text-decoration-none">Linkedin</a>
+              </li>
+              <li class="mb-2">
+                <a href="https://www.facebook.com/purpleleafltd" class="text-decoration-none">Facebook</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/contactpurpleleaf/" class="text-decoration-none">Instagram</a>
+              </li>
+            </ul>
+          </div>
+
+        </div> <!-- End of inner row -->
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
