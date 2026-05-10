@@ -185,10 +185,14 @@
 
     /* Added background color for Interview Results and next sections */
     .interview-results,
-    .personas,
     .journey-map,
     .design-solution {
-      background-color: #eef6fb;
+      background-color: #F2F2F2;
+      padding: 40px 20px;
+    }
+
+    .personas {
+      background-color: #FEFBEF;
       padding: 40px 20px;
     }
 
@@ -1728,7 +1732,7 @@
 
   <!-- Problem and Goals -->
   <section class="info" style="background: #F2F2F2;">
-    <div class="columns challengeStyle" style="    width: 85%;
+    <div class="columns challengeStyle" style="    width: 60%;
     margin: 0 auto;">
       <div class="column text-left">
         <h3 class="mont_bold_six_twenty_four">Challenge</h3>
@@ -1749,7 +1753,7 @@
     </div>
   </section>
 
-  <section class="info userStyle" style="    width: 85%;
+  <section class="info userStyle" style="    width: 60%;
     margin: 0 auto;">
     <div class="columns">
       <div class="column text-left">
@@ -1796,7 +1800,7 @@
   </section>
 
   <h4 class="text-center mont_bold_seven_sixteen">1. QUESTIONNAIRE</h4>
-  <section class="interview-results" style="width: 50%;
+  <section class="interview-results" style="width: 60%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;">
@@ -1809,7 +1813,7 @@
 
   <!-- User Personas -->
   <h4 class="text-center mont_bold_seven_sixteen">2. User Persona</h4>
-  <section class="personas" style="width: 50%;
+  <section class="personas" style="width: 60%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;">
@@ -1821,7 +1825,7 @@
   </section>
 
   <h4 class="text-center mont_bold_seven_sixteen">3. User Journey Map</h4>
-  <section class="personas" style="width: 50%;
+  <section class="journey-map" style="width: 60%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;">
@@ -1838,7 +1842,7 @@
     style="width:50%; margin:0 auto; text-align:left!important; display:flex; align-items:center;">
 
   </p>
-  <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
+  <section class="design-solution" style="width: 60%; margin: 0 auto; margin-bottom: 50px;">
     <div class="center" style="overflow: hidden;">
       <div class="image-block" style="display: flex; width: 100%;">
         <img src="{{ asset('gim_1_1.png') }}" style="min-width: 100%; transition: transform 0.5s ease;">
@@ -1918,7 +1922,7 @@
   <section class="contact-section py-5">
     <div class="container widthControl" style="    margin-top: 120px;
     margin-bottom: 120px;
-    width: 62%;
+    width: 61%;
     /* margin: auto; */">
       <div class="row align-items-start">
         <!-- Left: Contact Info -->

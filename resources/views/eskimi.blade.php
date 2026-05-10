@@ -1196,6 +1196,39 @@
       .nav-overlay {
         display: none !important;
       }
+
+      .challengeStyle {
+        padding-top: 160px !important;
+        padding-bottom: 160px !important;
+      }
+
+      .userStyle {
+        padding-top: 80px !important;
+        padding-bottom: 80px !important;
+      }
+
+      .project-title {
+        margin-top: 100px;
+      }
+
+      .project-info-row {
+        width: 870px;
+        margin: 0 auto;
+      }
+
+      .project-info-section {
+        margin-bottom: 170px;
+      }
+
+      .info {
+        background: #f9f9f9;
+        padding: 30px 20px;
+        text-align: center;
+      }
+
+      .desisol {
+        margin-bottom: 95px;
+      }
     }
 
 
