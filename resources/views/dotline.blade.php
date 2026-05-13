@@ -114,8 +114,8 @@
         }
 
         .image-block img {
-            max-width: 90%;
-            margin: 10px auto;
+            max-width: 100%;
+            margin: 0px auto;
             display: block;
         }
 
@@ -179,7 +179,7 @@
             text-decoration: none;
             border-radius: 5px;
             display: inline-block;
-            margin-top: 14%;
+            margin-top: 8%;
             width: 100%;
         }
 
@@ -469,7 +469,7 @@
 
         /* Section padding */
         section {
-            padding: 100px 0;
+            padding: 60px 0;
         }
 
         /* Headings */
@@ -1655,235 +1655,165 @@
         </div>
     </header>
 
-    <!-- Project Info -->
-    <section class="container py-5 project-info-section" style="max-width: 900px;">
+<!-- 1. Project Info Section -->
+<section class="container project-info-section" style="max-width: 870px; margin: 0 auto; margin-bottom: 170px;">
+    <h3 class="text-center mont_bold_seven mb-5 project-title" style="margin-top: 100px;">
+        Project Info
+    </h3>
 
-        <h3 class="text-center mont_bold_seven mb-5 project-title">
-            Project Info
-        </h3>
-
-        <div class="row project-info-row">
-
-            <div class="col-md-4 mb-4">
-                <p class="mb-0">
-                    <span class="mont_bold_six_sixteen">Client:</span>
-                    <span class="mont_regular_three_sixteen">DotOnline</span>
-                </p>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <p class="mb-0">
-                    <span class="mont_bold_six_sixteen">Deliverables:</span>
-                    <span class="mont_regular_three_sixteen">Web Application</span>
-                </p>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <p class="mb-0">
-                    <span class="mont_bold_six_sixteen">Sector:</span>
-                    <span class="mont_regular_three_sixteen">
-                        2 months
-                    </span>
-                </p>
-            </div>
-
+    <div class="row project-info-row" style="width: 70%; margin: 0 auto;">
+        <div class="col-md-4 mb-4">
+            <p class="mb-0">
+                <span class="mont_bold_six_sixteen">Client:</span>
+                <span class="mont_regular_three_sixteen">DotOnline</span>
+            </p>
         </div>
 
-    </section>
-
-
-
-    <!-- Problem and Goals -->
-    <section class="info" style="    width: 85%;
-    margin: 0 auto;">
-        <div class="columns">
-            <div class="column text-left">
-                <h3 class="mont_bold_six_twenty_four">The Problem</h3>
-                <p class="karla_regular_three_sixteen">Despite the widespread use of mobile phones, many organizations
-                    still struggle to effectively communicate with their target audience. This can result in lost
-                    opportunities, decreased efficiency, and decreased customer satisfaction. The need for an efficient,
-                    cost-effective, and scalable solution to reach a large number of people in a short amount of time is
-                    becoming increasingly important.
-                </p>
-            </div>
-            <div class="column text-left">
-                <h3 class="mont_bold_six_twenty_four">About</h3>
-                <p class="karla_regular_three_sixteen">DotOnline bulk SMS platform is a simple and efficient solution
-                    for businesses to reach their audience through text messaging. It allows users to send thousands of
-                    messages with custom sender IDs, real-time reporting, and automatic opt-out handling. Ideal for
-                    appointment reminders, promotions, and critical alerts.
-                </p>
-            </div>
+        <div class="col-md-4 mb-4">
+            <p class="mb-0">
+                <span class="mont_bold_six_sixteen">Deliverables:</span>
+                <span class="mont_regular_three_sixteen">Web Application</span>
+            </p>
         </div>
-    </section>
 
-    <h4 class="text-center mont_bold_seven_sixteen">1. Methodology</h4>
-    <section class="interview-results" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;">
-        <div class="center">
-            <div class="image-block">
-                <img src="{{ asset('dotlineOne.png') }}" alt="Survey Results" class="img-fluid" />
-            </div>
+        <div class="col-md-4 mb-4">
+            <p class="mb-0">
+                <span class="mont_bold_six_sixteen">Timeline:</span>
+                <span class="mont_regular_three_sixteen">2 months</span>
+            </p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <h4 class="text-center mont_bold_seven_sixteen">2. Questionnaire</h4>
-    <section class="interview-results" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;">
-        <div class="center">
-            <div class="image-block">
-                <img src="{{ asset('dotlineTwo.png') }}" alt="Survey Results" class="img-fluid" />
-            </div>
+<!-- 2. Problem and About Section -->
+<section class="info" style="background: #F2F2F2; padding: 145px 0px; text-align: center;">
+    <div class="columns" style="width: 60%; margin: 0 auto;">
+        <div class="column text-left">
+            <h3 class="mont_bold_six_twenty_four">The Problem</h3>
+            <p class="karla_regular_three_sixteen">Despite the widespread use of mobile phones, many organizations
+                still struggle to effectively communicate with their target audience. This can result in lost
+                opportunities, decreased efficiency, and decreased customer satisfaction. The need for an efficient,
+                cost-effective, and scalable solution to reach a large number of people in a short amount of time is
+                becoming increasingly important.
+            </p>
         </div>
-    </section>
-
-
-    <h4 class="text-center mont_bold_seven_sixteen">3T. Notable Insights</h4>
-    <section class="interview-results" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;">
-        <div class="center">
-            <div class="image-block">
-                <img src="{{ asset('dotlineThree.png') }}" alt="Survey Results" class="img-fluid" />
-            </div>
+        <div class="column text-left">
+            <h3 class="mont_bold_six_twenty_four">About</h3>
+            <p class="karla_regular_three_sixteen">DotOnline bulk SMS platform is a simple and efficient solution
+                for businesses to reach their audience through text messaging. It allows users to send thousands of
+                messages with custom sender IDs, real-time reporting, and automatic opt-out handling. Ideal for
+                appointment reminders, promotions, and critical alerts.
+            </p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <h4 class="text-center mont_bold_seven_sixteen">4. Competitive Analysis</h4>
-    <section class="interview-results" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;">
-        <div class="center">
-            <div class="image-block">
-                <img src="{{ asset('dotlineFour.png') }}" alt="Survey Results" class="img-fluid" />
-            </div>
+<!-- 3. Methodology & Questionnaire -->
+<h4 class="text-center mont_bold_seven_sixteen" style="margin-top: 100px;">1. Methodology</h4>
+<section class="user-research" style="width: 60%; margin: 0 auto; margin-top: 0px; margin-bottom: 100px;">
+    <div class="center">
+        <div class="image-block">
+            <img src="{{ asset('dotlineOne.png') }}" alt="Methodology" class="img-fluid" />
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="info center" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    background: none;">
-        <p class="karla_regular_three_eighteen" style="text-align: left;">After that a SWOT analysis was done for
-            DotOnline with regard to the other competitors.</p>
-        <!-- <a href="#" class="btn-download mont_bold_seven_sixteen">Download PDF</a> -->
-    </section>
-
-
-    <h4 class="text-center mont_bold_seven_sixteen">4. SWOT ANALYSIS</h4>
-    <section class="interview-results" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;">
-        <div class="center">
-            <div class="image-block">
-                <img src="{{ asset('dotlineFive.png') }}" alt="Survey Results" class="img-fluid" />
-            </div>
+<h4 class="text-center mont_bold_seven_sixteen">2. Questionnaire</h4>
+<section class="user-research" style="width: 60%; margin: 0 auto; margin-top: 60px; margin-bottom: 100px;">
+    <div class="center">
+        <div class="image-block">
+            <img src="{{ asset('dotlineTwo.png') }}" alt="Questionnaire" class="img-fluid" />
         </div>
-    </section>
+    </div>
+</section>
 
-
-    <section class="info center" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    background: none;">
-        <p class="karla_regular_three_eighteen" style="text-align: left;">In conclusion, DotOnline has the potential to
-            become a leading player in the bulk SMS market. Its user-friendly interface, affordable pricing, and
-            comprehensive reporting and analytics features are among its key strengths. The company must address the
-            limited integration with other systems and support for international SMS to fully realize its potential. By
-            focusing on these areas, DotOnline can position itself effectively in the market and capture a significant
-            share of the growing demand for bulk SMS solutions.</p>
-        <!-- <a href="#" class="btn-download mont_bold_seven_sixteen">Download PDF</a> -->
-    </section>
-
-    <h4 class="text-center mont_bold_seven_sixteen">1. User Persona</h4>
-    <section class="interview-results" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;">
-        <div class="center">
-            <div class="image-block">
-                <img src="{{ asset('dotlineSix.png') }}" alt="Survey Results" class="img-fluid" />
-            </div>
+<h4 class="text-center mont_bold_seven_sixteen">3. Notable Insights</h4>
+<section class="user-research" style="width: 60%; margin: 0 auto; margin-top: 60px; margin-bottom: 100px;">
+    <div class="center">
+        <div class="image-block">
+            <img src="{{ asset('dotlineThree.png') }}" alt="Insights" class="img-fluid" />
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Key Takeaways -->
-
-
-    <!-- Design Solution -->
-    <h4 class="text-center mont_bold_seven_eightteen">🧩 Design Solution</h4>
-    <p class="text-center karla_regular_four_sixteen"
-        style="width:50%; margin:0 auto; text-align:left!important; display:flex; align-items:center;">
-
-        <span style="color:#5A2CEA; font-weight:700; font-size:33px; margin-right:8px;">
-            *
-        </span>
-
-        <span class="mont_regular_five_twenty" style="margin-bottom: 13px;">
-            Web App
-        </span>
-
-    </p>
-    <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
-        <div class="center" style="overflow: hidden;">
-            <div class="image-block" style="display: flex; width: 100%;">
-                <img src="{{ asset('dotline_slider_1_1.png') }}"
-                    style="min-width: 100%; transition: transform 0.5s ease;">
-                <img src="{{ asset('dotline_slider_1_2.png') }}"
-                    style="min-width: 100%; transition: transform 0.5s ease;">
-                <img src="{{ asset('dotline_slider_1_3.png') }}"
-                    style="min-width: 100%; transition: transform 0.5s ease;">
-                <img src="{{ asset('dotline_slider_1_4.png') }}"
-                    style="min-width: 100%; transition: transform 0.5s ease;">
-                <img src="{{ asset('dotline_slider_1_5.png') }}"
-                    style="min-width: 100%; transition: transform 0.5s ease;">
-                <img src="{{ asset('dotline_slider_1_6.png') }}"
-                    style="min-width: 100%; transition: transform 0.5s ease;">
-                <img src="{{ asset('dotline_slider_1_7.png') }}"
-                    style="min-width: 100%; transition: transform 0.5s ease;">
-                <img src="{{ asset('dotline_slider_1_8.png') }}"
-                    style="min-width: 100%; transition: transform 0.5s ease;">
-                <img src="{{ asset('dotline_slider_1_9.png') }}"
-                    style="min-width: 100%; transition: transform 0.5s ease;">
-                <img src="{{ asset('dotline_slider_1_10.png') }}"
-                    style="min-width: 100%; transition: transform 0.5s ease;">
-                <img src="{{ asset('dotline_slider_1_12.png') }}"
-                    style="min-width: 100%; transition: transform 0.5s ease;">
-
-            </div>
+<!-- 4. Competitive & SWOT Analysis -->
+<h4 class="text-center mont_bold_seven_sixteen">4. Competitive Analysis</h4>
+<section class="user-research" style="width: 60%; margin: 0 auto; margin-top: 60px; margin-bottom: 20px;">
+    <div class="center">
+        <div class="image-block">
+            <img src="{{ asset('dotlineFour.png') }}" alt="Competitive Analysis" class="img-fluid" />
         </div>
-        <div class="number-nav" style="text-align: center; margin-top: 15px; font-family: sans-serif;"></div>
-    </section>
+    </div>
+</section>
+
+<section style="width: 40%; margin: 0 auto; margin-bottom: 80px;">
+    <p class="karla_regular_three_eighteen" style="text-align: left;">After that a SWOT analysis was done for
+        DotOnline with regard to the other competitors.</p>
+</section>
+
+<h4 class="text-center mont_bold_seven_sixteen">5. SWOT ANALYSIS</h4>
+<section class="user-research" style="width: 60%; margin: 0 auto; margin-top: 60px; margin-bottom: 20px;">
+    <div class="center">
+        <div class="image-block">
+            <img src="{{ asset('dotlineFive.png') }}" alt="SWOT" class="img-fluid" />
+        </div>
+    </div>
+</section>
+
+<section style="width: 60%; margin: 0 auto; margin-bottom: 100px;">
+    <p class="karla_regular_three_eighteen" style="text-align: left;">In conclusion, DotOnline has the potential to
+        become a leading player in the bulk SMS market. Its user-friendly interface, affordable pricing, and
+        comprehensive reporting and analytics features are among its key strengths. The company must address the
+        limited integration with other systems and support for international SMS to fully realize its potential.</p>
+</section>
+
+<!-- 5. User Persona -->
+<h4 class="text-center mont_bold_seven_sixteen">6. User Persona</h4>
+<section class="user-research" style="width: 60%; margin: 0 auto; margin-top: 60px; margin-bottom: 100px;">
+    <div class="center">
+        <div class="image-block">
+            <img src="{{ asset('dotlineSix.png') }}" alt="User Persona" class="img-fluid" />
+        </div>
+    </div>
+</section>
+
+<!-- 6. Design Solution Slider -->
+<h4 class="text-center mont_bold_seven_eightteen" style="margin-top: 60px;">🧩 Design Solution</h4>
+<p class="text-center" style="width:60%; margin:0 auto; text-align:left!important; display:flex; align-items:center; margin-bottom: 20px;">
+    <span style="color:#5A2CEA; font-weight:700; font-size:33px; margin-right:8px;">*</span>
+    <span class="mont_regular_five_twenty">Web App</span>
+</p>
+
+<section class="design-solution desisol" style="width: 60%; margin: 0 auto; margin-bottom: 95px;">
+    <div class="center" style="overflow: hidden; border-radius: 8px;">
+        <div class="image-block" id="dotlineSlider" style="display: flex; width: 100%; transition: transform 0.5s ease;">
+            <img src="{{ asset('dotline_slider_1_1.png') }}" style="min-width: 100%;">
+            <img src="{{ asset('dotline_slider_1_2.png') }}" style="min-width: 100%;">
+            <img src="{{ asset('dotline_slider_1_3.png') }}" style="min-width: 100%;">
+            <img src="{{ asset('dotline_slider_1_4.png') }}" style="min-width: 100%;">
+            <img src="{{ asset('dotline_slider_1_5.png') }}" style="min-width: 100%;">
+            <img src="{{ asset('dotline_slider_1_6.png') }}" style="min-width: 100%;">
+            <img src="{{ asset('dotline_slider_1_7.png') }}" style="min-width: 100%;">
+            <img src="{{ asset('dotline_slider_1_8.png') }}" style="min-width: 100%;">
+            <img src="{{ asset('dotline_slider_1_9.png') }}" style="min-width: 100%;">
+            <img src="{{ asset('dotline_slider_1_10.png') }}" style="min-width: 100%;">
+            <img src="{{ asset('dotline_slider_1_12.png') }}" style="min-width: 100%;">
+        </div>
+    </div>
+    <div class="number-nav" id="dotlineNav" style="text-align: center; margin-top: 20px; font-family: sans-serif;"></div>
+</section>
+
+<!-- 7. Responsiveness Section -->
+<p class="text-center" style="width:60%; margin:0 auto; text-align:left!important; display:flex; align-items:center; margin-bottom: 60px;">
+    <span style="color:#5A2CEA; font-weight:700; font-size:33px; margin-right:8px;">*</span>
+    <span class="mont_regular_five_twenty">Responsiveness</span>
+</p>
 
 
 
-    <p class="text-center karla_regular_four_sixteen"
-        style="width:50%; margin:0 auto; text-align:left!important; display:flex; align-items:center;">
-
-        <span style="color:#5A2CEA; font-weight:700; font-size:33px; margin-right:8px;">
-            *
-        </span>
-
-        <span class="mont_regular_five_twenty" style="margin-bottom: 13px;">
-            Responsiveness
-        </span>
-
-    </p>
 
 
-
-
-
-    <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
+    <section class="design-solution" style="width: 60%; margin: 0 auto; margin-bottom: 50px;">
         <div class="center" style="overflow: hidden;">
             <div class="image-block" style="display: flex; width: 100%;">
                 <img src="{{ asset('dotline_slider_2_1.png') }}"
@@ -1960,97 +1890,66 @@
     </script>
 
     <!-- Key Takeaways -->
-    <section class="info center" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background: none;">
-        <h4 class="mont_bold_seven_sixteen" style="margin-bottom: 14%;">Key Takeways</h4>
-        <p class="karla_regular_three_eighteen" style="text-align: left;">Digital tools can empower artisans: By
-            providing artisans with digital tools, The Karighor Archive is helping them showcase their work to a global
-            audience, which was previously not possible. The platform is promoting the preservation of traditional
-            crafts and empowering artisan communities in Bangladesh.
-        </p>
-    </section>
 
-    <section class="info center" style="width: 50%;
+    <section class="center" style="width: 60%;
     margin: 0 auto;
     margin-top: 0px;
     margin-bottom: 50px;
     background: none;">
-        <p class="karla_regular_three_eighteen" style="text-align: left;">Knowledge exchange is critical for community
-            building: The Karighor Archive promotes knowledge exchange within the artisan community, which fosters
-            community building and encourages collaborations between artisans.</p>
-    </section>
-
-    <section class="info center" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 0px;
-    margin-bottom: 50px;
-    background: none;">
-        <p class="karla_regular_three_eighteen" style="text-align: left;">Technology can help preserve cultural
-            heritage: The Karighor Archive is an excellent example of how technology can be leveraged to preserve
-            cultural heritage and empower communities. By providing an accessible and user-friendly platform for
-            artisans, The Karighor Archive is helping to ensure that Bangladesh's rich artisanal heritage is not lost to
-            time.
-        </p>
         <a href="#" class="btn-download mont_bold_seven_sixteen">Download PDF</a>
     </section>
 
     <!-- Footer -->
-    <section class="contact-section py-5">
-        <div class="container widthControl" style="    margin-top: 120px;
+  <section class="contact-section py-5">
+    <div class="container widthControl" style="    margin-top: 120px;
     margin-bottom: 120px;
     width: 62%;
     /* margin: auto; */">
-            <div class="row align-items-start">
-                <!-- Left: Contact Info -->
-                <div class="col-lg-8 mb-4">
-                    <h2 class="fw-bold gradient-text mb-3" style="text-align: left;">Get<br>in touch</h2>
-                    <p style="text-align: left;"><a href="mailto:contactpurpleleaf@gmail.com" class="email-link"
-                            style="text-align: left;">contactpurpleleaf@gmail.com</a></p>
-                    <p style="text-align: left;">
-                        <img src="https://img.icons8.com/color/24/000000/whatsapp--v1.png" alt="WhatsApp icon" />
-                        +880123456789
-                    </p>
-                </div>
-
-                <!-- Right: Links -->
-                <div class="col-lg-4" style="margin-top: 119px;">
-                    <div class="row gx-0">
-
-                        <div class="col-6">
-                            <h5 class="fw-bold text-nowrap"
-                                style="text-align: left;font-size: clamp(21px, 2vw, 1.25rem);">Portfolio
-                            </h5>
-                            <ul class="list-unstyled mb-0">
-                                <li><a href="https://dribbble.com/Purple_Leaf"
-                                        class="small text-decoration-none">Dribbble</a></li>
-                                <li><a data-target="" class="small text-decoration-none">Behance</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-6 d-flex justify-content-end">
-                            <div style="min-width: fit-content;">
-                                <h5 class="fw-bold text-nowrap" style="font-size: clamp(21px, 2vw, 1.25rem);">Social
-                                    media</h5>
-                                <ul class="list-unstyled mb-0">
-                                    <li><a href="https://www.linkedin.com/company/purpleleaf1/"
-                                            class="small text-decoration-none">Linkedin</a></li>
-                                    <li><a href="https://www.facebook.com/purpleleafltd"
-                                            class="small text-decoration-none">Facebook</a></li>
-                                    <li><a href="https://www.instagram.com/contactpurpleleaf/"
-                                            class="small text-decoration-none">Instagram</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
+      <div class="row align-items-start">
+        <!-- Left: Contact Info -->
+        <div class="col-lg-8 mb-4">
+          <h2 class="fw-bold gradient-text mb-3" style="text-align: left;">Get<br>in touch</h2>
+          <p style="text-align: left;"><a href="mailto:contactpurpleleaf@gmail.com" class="email-link"
+              style="text-align: left;">contactpurpleleaf@gmail.com</a></p>
+          <p style="text-align: left;">
+            <img src="https://img.icons8.com/color/24/000000/whatsapp--v1.png" alt="WhatsApp icon" />
+            +880123456789
+          </p>
         </div>
-    </section>
+
+        <!-- Right: Links -->
+        <div class="col-lg-4" style="margin-top: 119px;">
+          <div class="row gx-0">
+
+            <div class="col-6">
+              <h5 class="fw-bold text-nowrap" style="text-align: left;font-size: clamp(21px, 2vw, 1.25rem);">Portfolio
+              </h5>
+              <ul class="list-unstyled mb-0">
+                <li><a href="https://dribbble.com/Purple_Leaf" class="small text-decoration-none">Dribbble</a></li>
+                <li><a data-target="" class="small text-decoration-none">Behance</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6 d-flex justify-content-end">
+              <div style="min-width: fit-content;">
+                <h5 class="fw-bold text-nowrap" style="font-size: clamp(21px, 2vw, 1.25rem);">Social media</h5>
+                <ul class="list-unstyled mb-0">
+                  <li><a href="https://www.linkedin.com/company/purpleleaf1/"
+                      class="small text-decoration-none">Linkedin</a></li>
+                  <li><a href="https://www.facebook.com/purpleleafltd" class="small text-decoration-none">Facebook</a>
+                  </li>
+                  <li><a href="https://www.instagram.com/contactpurpleleaf/"
+                      class="small text-decoration-none">Instagram</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

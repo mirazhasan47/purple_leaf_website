@@ -111,6 +111,7 @@
     .image-block {
       text-align: center;
       margin-top: 30px;
+      background-color: #A4D4FF;
     }
 
     .image-block img {
@@ -188,7 +189,7 @@
     .personas,
     .journey-map,
     .design-solution {
-      background-color: #eef6fb;
+      background-color: #A4D4FF;
       padding: 40px 20px;
     }
 
@@ -1650,109 +1651,107 @@
     </div>
   </header>
 
-  <!-- Project Info -->
-  <section class="container py-5 project-info-section height_five_hundred" style="max-width: 900px;">
 
-    <h3 class="text-center mont_bold_seven mb-5 project-title">
-      Project Info
-    </h3>
 
-    <div class="row project-info-row">
+<section class="container project-info-section" style="max-width: 870px; margin: 0 auto; margin-bottom: 170px;">
+  <h3 class="text-center mont_bold_seven mb-5 project-title" style="margin-top: 100px;">
+    Project Info
+  </h3>
 
-      <div class="col-md-4 mb-4">
-        <p class="mb-0">
-          <span class="mont_bold_six_sixteen">Client:</span>
-          <span class="mont_regular_three_sixteen">London Health</span>
-        </p>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <p class="mb-0">
-          <span class="mont_bold_six_sixteen">Deliverables:</span>
-          <span class="mont_regular_three_sixteen">Mobile Application</span>
-        </p>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <p class="mb-0">
-          <span class="mont_bold_six_sixteen">Sector:</span>
-          <span class="mont_regular_three_sixteen">
-            Health
-          </span>
-        </p>
-      </div>
-
+  <div class="row project-info-row" style="width: 70%; margin: 0 auto;">
+    <div class="col-md-4 mb-4">
+      <p class="mb-0">
+        <span class="mont_bold_six_sixteen">Client:</span>
+        <span class="mont_regular_three_sixteen">London Health</span>
+      </p>
     </div>
 
-  </section>
+    <div class="col-md-4 mb-4">
+      <p class="mb-0">
+        <span class="mont_bold_six_sixteen">Deliverables:</span>
+        <span class="mont_regular_three_sixteen">Mobile Application</span>
+      </p>
+    </div>
 
-  <!-- Problem and Goals -->
-  <section class="info height_five_hundred" style="    width: 85%;
-    margin: 0 auto;">
-    <div class="columns">
-      <div class="column text-left">
-        <h3 class="mont_bold_six_twenty_four">The Problem</h3>
-        <p class="karla_regular_three_sixteen">The We were approached by London Health to build a mobile app for their
-          service. For most people, finding the right doctor is a difficult job. At the same time, doctors have a hard
-          time managing their appointments.
-          So, the idea was to help patients easily find the right doctor and help doctors manage their appointments.</p>
-      </div>
-      <div class="column text-left">
-        <h3 class="mont_bold_six_twenty_four">Goals</h3>
-        <p class="karla_regular_three_sixteen">To improve the overall experience of doctors and patients, our goals were
-          to-</p>
-        <ol class="karla_regular_three_sixteen">
-          <li>Help patients find the right doctor.</li>
-          <li>Help doctors manage and organize their appointments.</li>
-          <li>Save time for both the doctors and patients.</li>
-          <li>Help doctors and patients plan in advance.</li>
-        </ol>
+    <div class="col-md-4 mb-4">
+      <p class="mb-0">
+        <span class="mont_bold_six_sixteen">Sector:</span>
+        <span class="mont_regular_three_sixteen">Health</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 2. Problem Section (Matches .info style) -->
+<section class="info" style="background: #F2F2F2; padding: 145px 0px; text-align: center;">
+  <div class="columns" style="width: 60%; margin: 0 auto;">
+    <div class="column text-left">
+      <h3 class="mont_bold_six_twenty_four">The Problem</h3>
+      <p class="karla_regular_three_sixteen">The We were approached by London Health to build a mobile app for their
+        service. For most people, finding the right doctor is a difficult job. At the same time, doctors have a hard
+        time managing their appointments.
+        So, the idea was to help patients easily find the right doctor and help doctors manage their appointments.</p>
+    </div>
+    <div class="column text-left">
+      <h3 class="mont_bold_six_twenty_four">Goals</h3>
+    <div class="column text-left">
+      <div class="card-body">
+        <ul class="list-unstyled pain-point-list">
+          <li class="d-flex align-items-start mb-3">
+            <span class="icon">👉</span>
+            <span>Help patients find the right doctor.</span>
+          </li>
+          <li class="d-flex align-items-start mb-3">
+            <span class="icon">👉</span>
+            <span>Help doctors manage and organize their appointments.</span>
+          </li>
+          <li class="d-flex align-items-start mb-3">
+            <span class="icon">👉</span>
+            <span>Save time for both the doctors and patients.</span>
+          </li>
+          <li class="d-flex align-items-start">
+            <span class="icon">👉</span>
+            <span>Help doctors and patients plan in advance.</span>
+          </li>
+        </ul>
       </div>
     </div>
-  </section>
-
-
-  <h4 class="text-center mont_bold_seven_sixteen">1. Research Questionnaire</h4>
-  <section class="interview-results" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;">
-    <div class="center">
-      <div class="image-block">
-        <img src="{{ asset('londonBigImageOne.png') }}" alt="Survey Results" class="img-fluid" />
-      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- User Personas -->
-  <h4 class="text-center mont_bold_seven_sixteen">2. Interview Results</h4>
-  <section class="personas" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;">
-    <div class="center">
-      <div class="image-block">
-        <img src="{{ asset('londonBigImageTwo.png') }}" alt="User Persona" class="img-fluid" />
-      </div>
+<!-- 3. Goals Section (Matches .goals style) -->
+
+<!-- 4. Research Sections (Consistent 60% Width) -->
+<h4 class="text-center mont_bold_seven_sixteen" style="margin-top: 100px;">1. Research Questionnaire</h4>
+<section class="user-research" style="width: 60%; margin: 0 auto; margin-top: 100px; margin-bottom: 100px;">
+  <div class="center">
+    <div class="image-block">
+      <img src="{{ asset('londonBigImageOne.png') }}" alt="Survey Results" class="img-fluid" />
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Journey Map -->
-  <h4 class="text-center mont_bold_seven_sixteen">3. User Persona</h4>
-  <section class="journey-map" style="width: 50%;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;">
-    <div class="center">
-      <div class="image-block">
-        <img src="{{ asset('londonBigImageThree.png') }}" alt="User Journey Map" class="img-fluid" />
-      </div>
+<h4 class="text-center mont_bold_seven_sixteen">2. Interview Results</h4>
+<section class="personas" style="width: 60%; margin: 0 auto; margin-top: 100px; margin-bottom: 100px;">
+  <div class="center">
+    <div class="image-block">
+      <img src="{{ asset('londonBigImageTwo.png') }}" alt="User Persona" class="img-fluid" />
     </div>
-  </section>
+  </div>
+</section>
 
+<h4 class="text-center mont_bold_seven_sixteen">3. User Persona</h4>
+<section class="journey-map" style="width: 60%; margin: 0 auto; margin-top: 100px; margin-bottom: 100px;">
+  <div class="center">
+    <div class="image-block">
+      <img src="{{ asset('londonBigImageThree.png') }}" alt="User Journey Map" class="img-fluid" />
+    </div>
+  </div>
+</section>
   <!-- Design Solution -->
-  <h4 class="text-center mont_bold_seven_eightteen">🧩 Design Solution</h4>
-  <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
+  <h4 class="text-center mont_bold_seven_eightteen" style="margin-bottom: 80px;">🧩 Design Solution</h4>
+  <section class="design-solution" style="width: 60%; margin: 0 auto; margin-bottom: 50px;">
     <div class="center" style="overflow: hidden;">
       <div class="image-block" style="display: flex; width: 100%;">
         <img src="{{ asset('london_1_1.png') }}" style="min-width: 100%; transition: transform 0.5s ease;">
@@ -1830,15 +1829,11 @@
 
 
   <!-- Key Takeaways -->
-  <section class="info center" style="width: 50%;
+  <section class="info center" style="width: 60%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;
     background: none;">
-    <h4 class="mont_bold_seven_sixteen" style="margin-bottom: 14%;">Key Takeaways</h4>
-    <p class="karla_regular_three_eighteen">This project focused on user research to identify the needs of educators. We
-      crafted scalable solutions to ensure
-      a better, more impactful digital experience.</p>
     <a href="#" class="btn-download mont_bold_seven_sixteen">Download PDF</a>
   </section>
 

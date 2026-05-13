@@ -186,9 +186,21 @@
     /* Added background color for Interview Results and next sections */
     .interview-results,
     .personas,
-    .journey-map,
-    .design-solution {
+    .journey-map {
       background-color: #eef6fb;
+      padding: 40px 20px;
+    }
+
+    .design-solution {
+    }
+
+    .personas {
+      background-color: #F2F2F2;
+      padding: 40px 20px;
+    }
+
+    .user-research {
+      background-color: #8C4EFF;
       padding: 40px 20px;
     }
 
@@ -1221,8 +1233,19 @@
       }
 
       .info {
-        background: #f9f9f9;
-        padding: 30px 20px;
+        background: #F2F2F2;
+        padding: 145px 0px;
+        text-align: center;
+      }
+
+      .goals {
+        background: #ffffff;
+        padding: 85px 0px;
+        text-align: center;
+      }
+
+      .pain-points {
+        background: #F2F2F2;
         text-align: center;
       }
 
@@ -1556,7 +1579,7 @@
 
       /* Fix for the Design Solution images to ensure they stay responsive */
       .design-solution {
-        width: 85% !important;
+        width: 60% !important;
       }
 
       /* Optional: Ensure text alignment looks good on mobile */
@@ -1726,9 +1749,9 @@
   </section>
 
   <!-- Problem and Goals -->
-  <section class="info" style="    width: 85%;
+  <section class="info">
+    <div class="columns" style="width: 60%;
     margin: 0 auto;">
-    <div class="columns">
       <div class="column text-left">
         <h3 class="mont_bold_six_twenty_four">The Problem</h3>
         <p class="karla_regular_three_sixteen">The problem is that companies struggle to create effective digital
@@ -1744,9 +1767,9 @@
     </div>
   </section>
 
-  <section class="info" style="    width: 85%;
+  <section class="goals">
+    <div class="columns"  style="    width: 60%;
     margin: 0 auto;">
-    <div class="columns">
       <div class="column text-left">
         <div class="header">
           <h3 class="mont_bold_six_twenty_four">Goals</h3>
@@ -1795,7 +1818,7 @@
   </section>
 
   <h4 class="text-center mont_bold_seven_sixteen">1. User Research</h4>
-  <section class="interview-results" style="width: 50%;
+  <section class="user-research" style="width: 60%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;">
@@ -1805,7 +1828,7 @@
       </div>
     </div>
   </section>
-  <section class="personas" style="width: 50%;
+  <section class="personas" style="width: 60%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;">
@@ -1815,9 +1838,9 @@
       </div>
     </div>
   </section>
-  <section class="info" style="    width: 85%;
+  <section class="pain-points">
+    <div class="columns" style="    width: 60%;
     margin: 0 auto;">
-    <div class="columns">
       <div class="column text-left">
         <div class="header">
           <h3 class="mont_bold_six_twenty_four">Pain points</h3>
@@ -1868,14 +1891,14 @@
   </section>
 
   <!-- Design Solution -->
-  <h4 class="text-center mont_bold_seven_eightteen">🧩 Design Solution</h4>
+  <h4 class="text-center mont_bold_seven_eightteen" style="margin-top: 60px;">🧩 Design Solution</h4>
   <p class="text-center karla_regular_four_sixteen"
-    style="width:50%; margin:0 auto; text-align:left!important; display:flex; align-items:center;">
+    style="width:60%; margin:0 auto; text-align:left!important; display:flex; align-items:center;">
 
   </p>
 
 
-  <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
+  <section class="design-solution" style="width: 60%; margin: 0 auto; margin-bottom: 50px;">
     <div class="center" style="overflow: hidden;">
       <div class="image-block" style="display: flex; width: 100%;">
         <img src="{{ asset('eskimi_1_1.png') }}" style="min-width: 100%; transition: transform 0.5s ease;">
