@@ -469,7 +469,7 @@
 
         /* Section padding */
         section {
-            padding: 100px 0;
+            padding: 20px 0;
         }
 
         /* Headings */
@@ -1192,6 +1192,15 @@
 
         @media (min-width: 992px) {
 
+        .addPaddingProblem {
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
+
+        h4 {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
             .custom-header,
             .nav-overlay {
                 display: none !important;
@@ -1747,9 +1756,9 @@
 
 
     <!-- Problem and Goals -->
-    <section class="info" style="    width: 85%;
+    <section class="addPaddingProblem" style="background: #F2F2F2;">
+        <div class="columns"  style="    width: 60%;
     margin: 0 auto;">
-        <div class="columns">
             <div class="column text-left">
                 <h3 class="mont_bold_six_twenty_four">The Problem</h3>
                 <p class="karla_regular_three_sixteen">Poverty is forcing many artistes, craftsmen and others in
@@ -1771,7 +1780,7 @@
     </section>
 
 
-    <section class="info" style="    width: 85%;
+    <section class="goals" style="    width: 60%;
     margin: 0 auto;">
         <div class="columns">
             <div class="column text-left">
@@ -1807,10 +1816,10 @@
     </section>
 
     <h4 class="text-center mont_bold_seven_sixteen">Research methodology</h4>
-    <section class="interview-results" style="width: 50%;
+    <section class="interview-results" style="width: 60%;
     margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;">
+    margin-top: 20px;
+    margin-bottom: 20px;">
         <div class="center">
             <div class="image-block">
                 <img src="{{ asset('karighorOne.png') }}" alt="Survey Results" class="img-fluid" />
@@ -1818,9 +1827,9 @@
         </div>
     </section>
 
-    <section class="info" style="    width: 85%;
+    <section class="addPaddingProblem" style="background: #F2F2F2;">
+        <div class="columns"  style="    width: 60%;
     margin: 0 auto;">
-        <div class="columns">
             <div class="column text-left">
                 <div class="header">
                     <h3 class="mont_bold_six_twenty_four">Research</h3>
@@ -1848,10 +1857,10 @@
     </section>
 
     <!-- Key Takeaways -->
-    <section class="info center" style="width: 50%;
+    <section class="infoo center" style="width: 60%;
     margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 0px;
     background: none;">
         <p class="karla_regular_three_eighteen" style="text-align: left;">Based on our research, we conclude that there
             is a need for a video-based tool that can make it easy for artisans in Bangladesh to digitize their heritage
@@ -1861,12 +1870,12 @@
         </p>
     </section>
 
-    <section class="info center" style="width: 50%;
+    <section class="infoo center" style="width: 60%;
     margin: 0 auto;
     margin-top: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     background: none;">
-        <h4 class="mont_bold_seven_sixteen" style="margin-bottom: 14%;">AN easy 5 step process</h4>
+        <h4 class="mont_bold_seven_sixteen" style="margin-bottom: 7%;">AN easy 5 step process</h4>
         <p class="karla_regular_three_eighteen" style="text-align: left;">Through this feature, artisans can explain
             their craft-making process and showcase their skills to a wider audience. It allows them to provide insights
             into their craft and share their knowledge with other artisans, students, and enthusiasts. The guided video
@@ -1881,7 +1890,7 @@
     <!-- Design Solution -->
     <h4 class="text-center mont_bold_seven_eightteen">🧩 Design Solution</h4>
     <p class="text-center karla_regular_four_sixteen"
-        style="width:50%; margin:0 auto; text-align:left!important; display:flex; align-items:center;">
+        style="width:60%; margin:0 auto; text-align:left!important; display:flex; align-items:center;">
 
         <span style="color:#5A2CEA; font-weight:700; font-size:33px; margin-right:8px;">
             *
@@ -1892,7 +1901,7 @@
         </span>
 
     </p>
-    <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
+    <section class="design-solution" style="width: 60%; margin: 0 auto; margin-bottom: 50px;">
         <div class="center" style="overflow: hidden;">
             <div class="image-block" style="display: flex; width: 100%;">
                 <img src="{{ asset('karighor_2_1.png') }}" style="min-width: 100%; transition: transform 0.5s ease;">
@@ -1906,7 +1915,7 @@
 
 
     <p class="text-center karla_regular_four_sixteen"
-        style="width:50%; margin:0 auto; text-align:left!important; display:flex; align-items:center;">
+        style="width:60%; margin:0 auto; text-align:left!important; display:flex; align-items:center;">
 
         <span style="color:#5A2CEA; font-weight:700; font-size:33px; margin-right:8px;">
             *
@@ -1917,7 +1926,7 @@
         </span>
 
     </p>
-    <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
+    <section class="design-solution" style="width: 60%; margin: 0 auto; margin-bottom: 50px;">
         <div class="center" style="overflow: hidden;">
             <div class="image-block" style="display: flex; width: 100%;">
                 <img src="{{ asset('karighor_1_1.png') }}" style="min-width: 100%; transition: transform 0.5s ease;">
@@ -1992,12 +2001,12 @@
     </script>
 
     <!-- Key Takeaways -->
-    <section class="info center" style="width: 50%;
+    <section class="infoo center" style="width: 60%;
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 0px;
     background: none;">
-        <h4 class="mont_bold_seven_sixteen" style="margin-bottom: 14%;">Key Takeways</h4>
+        <h4 class="mont_bold_seven_sixteen" style="margin-bottom: 7%;">Key Takeways</h4>
         <p class="karla_regular_three_eighteen" style="text-align: left;">Digital tools can empower artisans: By
             providing artisans with digital tools, The Karighor Archive is helping them showcase their work to a global
             audience, which was previously not possible. The platform is promoting the preservation of traditional
@@ -2005,20 +2014,20 @@
         </p>
     </section>
 
-    <section class="info center" style="width: 50%;
+    <section class="infoo center" style="width: 60%;
     margin: 0 auto;
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     background: none;">
         <p class="karla_regular_three_eighteen" style="text-align: left;">Knowledge exchange is critical for community
             building: The Karighor Archive promotes knowledge exchange within the artisan community, which fosters
             community building and encourages collaborations between artisans.</p>
     </section>
 
-    <section class="info center" style="width: 50%;
+    <section class="infoo center" style="width: 60%;
     margin: 0 auto;
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     background: none;">
         <p class="karla_regular_three_eighteen" style="text-align: left;">Technology can help preserve cultural
             heritage: The Karighor Archive is an excellent example of how technology can be leveraged to preserve

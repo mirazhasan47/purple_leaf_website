@@ -1189,9 +1189,71 @@
 
     @media (min-width: 992px) {
 
+      .addPaddingProblem {
+        padding-top: 150px;
+        padding-bottom: 150px;
+      }
+
+      h4 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
       .custom-header,
       .nav-overlay {
         display: none !important;
+      }
+    }
+
+    @media (min-width: 992px) {
+
+      .custom-header,
+      .nav-overlay {
+        display: none !important;
+      }
+
+      .challengeStyle {
+        padding-top: 160px !important;
+        padding-bottom: 160px !important;
+      }
+
+      .userStyle {
+        padding-top: 80px !important;
+        padding-bottom: 80px !important;
+      }
+
+      .project-title {
+        margin-top: 100px;
+      }
+
+      .project-info-row {
+        width: 870px;
+        margin: 0 auto;
+      }
+
+      .project-info-section {
+        margin-bottom: 170px;
+      }
+
+      .info {
+        background: #F2F2F2;
+        padding: 145px 0px;
+        text-align: center;
+      }
+
+      .goals {
+        background: #ffffff;
+        padding: 85px 0px;
+        text-align: center;
+      }
+
+      .pain-points {
+        background: #F2F2F2;
+        text-align: center;
+      }
+
+      .desisol {
+        margin-bottom: 95px;
       }
     }
 
@@ -1704,9 +1766,9 @@
   </section>
 
   <!-- Problem and Goals -->
-  <section class="info" style="    width: 85%;
+  <section class="addPaddingProblem" style="background: #F2F2F2;" >
+    <div class="columns" style="    width: 60%;
     margin: 0 auto;">
-    <div class="columns">
       <div class="column text-left">
         <h3 class="mont_bold_six_twenty_four">The Problem</h3>
         <p class="karla_regular_three_sixteen">So many people struggle to keep track of their tasks and to manage their
@@ -1722,7 +1784,7 @@
     </div>
   </section>
 
-  <section class="info" style="    width: 85%;
+  <section class="goals" style="    width: 60%;
     margin: 0 auto;">
     <div class="columns">
       <div class="column text-left">
@@ -1758,9 +1820,9 @@
   </section>
 
 
-  <section class="info" style="    width: 85%;
+  <section class="addPaddingProblem">
+    <div class="columns" style="width: 60%;
     margin: 0 auto;">
-    <div class="columns">
       <div class="column text-left">
         <div class="header">
           <h3 class="mont_bold_six_twenty_four">User</h3>
@@ -1785,7 +1847,7 @@
   </section>
 
   <h4 class="text-center mont_bold_seven_sixteen">1. QUESTIONNAIRE</h4>
-  <section class="interview-results" style="width: 50%;
+  <section class="interview-results" style="width: 60%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;">
@@ -1797,9 +1859,9 @@
   </section>
 
 
-  <section class="info" style="    width: 85%;
+  <section  class="addPaddingProblem">
+    <div class="columns" style="    width: 60%;
     margin: 0 auto;">
-    <div class="columns">
       <div class="column text-left">
         <div class="header">
           <h3 class="mont_bold_six_twenty_four">Insights</h3>
@@ -1844,7 +1906,7 @@
 
   <!-- User Personas -->
   <h4 class="text-center mont_bold_seven_sixteen">1. User Persona</h4>
-  <section class="personas" style="width: 50%;
+  <section class="personas" style="width: 60%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;">
@@ -1856,7 +1918,7 @@
   </section>
 
   <h4 class="text-center mont_bold_seven_sixteen">1. User Persona</h4>
-  <section class="personas" style="width: 50%;
+  <section class="personas" style="width: 60%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;">
@@ -1881,7 +1943,7 @@
     </span>
 
   </p>
-  <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
+  <section class="design-solution" style="width: 60%; margin: 0 auto; margin-bottom: 50px;">
     <div class="center" style="overflow: hidden;">
       <div class="image-block" style="display: flex; width: 100%;">
         <img src="{{ asset('flexi_1_1.png') }}" style="min-width: 100%; transition: transform 0.5s ease;">
@@ -1907,7 +1969,7 @@
     </span>
 
   </p>
-  <section class="design-solution" style="width: 50%; margin: 0 auto; margin-bottom: 50px;">
+  <section class="design-solution" style="width: 60%; margin: 0 auto; margin-bottom: 50px;">
     <div class="center" style="overflow: hidden;">
       <div class="image-block" style="display: flex; width: 100%;">
         <img src="{{ asset('flexi_2_1.png') }}" style="min-width: 100%; transition: transform 0.5s ease;">
