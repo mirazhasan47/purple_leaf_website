@@ -77,7 +77,6 @@
     }
 
     .info {
-      background: #f9f9f9;
       padding: 30px 20px;
       text-align: center;
     }
@@ -187,8 +186,6 @@
     .interview-results,
     .journey-map,
     .design-solution {
-      background-color: #F2F2F2;
-      padding: 40px 20px;
     }
 
     .personas {
@@ -1225,7 +1222,6 @@
       }
 
       .info {
-        background: #f9f9f9;
         padding: 0px 0px;
         text-align: center;
       }

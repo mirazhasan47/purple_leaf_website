@@ -465,7 +465,6 @@
     }
 
     .project-card h6 {
-      font-size: 0.95rem;
       font-weight: 600;
       margin-top: 0.3rem;
       text-shadow: 0.1px 0 #424242, -0.1px 0 0px #424242;
@@ -473,9 +472,6 @@
       letter-spacing: 0.5px;
     }
 
-    .project-card small {
-      font-size: 0.8rem;
-    }
 
     .project-card {
       margin-bottom: 100px;
@@ -1219,6 +1215,10 @@
     .nav-link {
       cursor: pointer;
     }
+
+    .text-mutedS {
+      font-size: 16px;
+    }
   </style>
 </head>
 
@@ -1278,7 +1278,7 @@
 
             <!-- Individual Projects -->
             <li><a class="dropdown-item" href="{{ route('flexinote') }}">FLEXI NOTE</a></li>
-            <li><a class="dropdown-item" href="{{ route('gim') }}">GM - GOODS IN MOTION</a></li>
+            <li><a class="dropdown-item" href="{{ route('gim') }}">GIM - GOODS IN MOTION</a></li>
             <li><a class="dropdown-item" href="{{ route('commchat') }}">COMCHAT METAVERSE MESSENGER</a></li>
             <li><a class="dropdown-item" href="{{ route('londonhealth') }}">LONDON HEALTH</a></li>
             <li><a class="dropdown-item" href="{{ route('dotline') }}">DOTONLINE BULK SMS</a></li>
@@ -1373,7 +1373,7 @@
                   </div>
                   <div class="mt-4 text-start">
                     <h6 class="mb-0">FLEXI NOTE</h6>
-                    <small class="text-muted">Productivity</small>
+                    <small class="text-mutedS">Productivity</small>
                   </div>
                 </div>
               </div>
@@ -1391,8 +1391,8 @@
                     <img src="{{ asset('recTwo.png') }}" class="img-fluid rounded recImage" alt="GM Goods In Motion">
                   </div>
                   <div class="mt-4 text-start">
-                    <h6 class="mb-0">GM - GOODS IN MOTION</h6>
-                    <small class="text-muted">Logistics Service</small>
+                    <h6 class="mb-0">GIM - GOODS IN MOTION</h6>
+                    <small class="text-mutedS">Logistics Service</small>
                   </div>
                 </div>
               </div>
@@ -1410,8 +1410,8 @@
                     <img src="{{ asset('recThree.png') }}" class="img-fluid rounded recImage" alt="Eshin">
                   </div>
                   <div class="mt-4 text-start">
-                    <h6 class="mb-0">ESHIN</h6>
-                    <small class="text-muted">Productivity</small>
+                    <h6 class="mb-0">ESKIMI</h6>
+                    <small class="text-mutedS">Productivity</small>
                   </div>
                 </div>
               </div>
@@ -1430,7 +1430,7 @@
                   </div>
                   <div class="mt-4 text-start">
                     <h6 class="mb-0">LONDON HEALTH</h6>
-                    <small class="text-muted">HealthTech</small>
+                    <small class="text-mutedS">HealthTech</small>
                   </div>
                 </div>
               </div>
@@ -1448,8 +1448,8 @@
                     <img src="{{ asset('recFive.png') }}" class="img-fluid rounded recImage" alt="Eglobaler 21">
                   </div>
                   <div class="mt-4 text-start">
-                    <h6 class="mb-0">EGLOBALER 21</h6>
-                    <small class="text-muted">Logistics Service</small>
+                    <h6 class="mb-0">ED LEADER</h6>
+                    <small class="text-mutedS">Logistics Service</small>
                   </div>
                 </div>
               </div>
@@ -1467,8 +1467,8 @@
                     <img src="{{ asset('recSix.png') }}" class="img-fluid rounded recImage" alt="Karcher">
                   </div>
                   <div class="mt-4 text-start">
-                    <h6 class="mb-0">KARCHER</h6>
-                    <small class="text-muted">Productivity</small>
+                    <h6 class="mb-0">KARIGHOR</h6>
+                    <small class="text-mutedS">Productivity</small>
                   </div>
                 </div>
               </div>
@@ -1487,7 +1487,7 @@
                   </div>
                   <div class="mt-4 text-start">
                     <h6 class="mb-0">COMCHAT METAVERSE MESSENGER</h6>
-                    <small class="text-muted">Messaging Platform</small>
+                    <small class="text-mutedS">Messaging Platform</small>
                   </div>
                 </div>
               </div>
@@ -1506,7 +1506,7 @@
                   </div>
                   <div class="mt-4 text-start">
                     <h6 class="mb-0">DOTONLINE BULK SMS</h6>
-                    <small class="text-muted">Communication</small>
+                    <small class="text-mutedS">Communication</small>
                   </div>
                 </div>
               </div>
